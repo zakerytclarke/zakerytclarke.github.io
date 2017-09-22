@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Zakery Clarke
+</title>    
+<style>
+.round{
+position:fixed;
+border-radius:50%;
+width:20%;
+position:fixed;
+transform: translate(-50%, -50%);
+}
+.rotate {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.rotate:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.box{
+text-align:center;
+box-shadow: 10px 10px;
+background-color:white;
+border:2px black solid;
+width:95%;
+border-radius:5%;
+height:50%;
+padding:10px;	
+display:none;
+}
+p {
+font-size:20px;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes inanimation {
+    from {top:100%;}
+    to {top:75;}
+}
+
+/* Standard syntax */
+@keyframes inanimation {
+    from {top:100%;}
+    to {top:75;}
+}
+	
+</style>
+</head> 
+<body style="background-color:black">
+		
+<img src="zak.jpg" class="round" style="top:75%;left:90%;">
+<img src="filter.png" class="round rotate" style="top:75%;left:90%;">
+
+<img src="zak.jpg" class="round" style="top:60%;left:70%;">
+<img src="filter.png" class="round rotate" style="top:60%;left:70%;z-index:1000;">
+		
+<img src="zak.jpg" class="round" style="top:75%;left:50%;">
+<img src="zakeryclarke.png" class="round rotate" style="top:75%;left:50%;">
+	
+<img src="zak.jpg" class="round" style="top:60%;left:30%;">
+<img src="education.png" class="round rotate" style="top:60%;left:30%;">
+
+<img src="zak.jpg" class="round" style="top:75%;left:10%;">
+<img src="work.png" class="round rotate" style="top:75%;left:10%;">
+	
+<div class="box" id="education">
+<u>
+<h1>
+Education
+</h1>
+</u>
+<p>
+Computer Science Major who's been coding since he was 10
+<br>
+Final High School GPA: 4.48
+<br>
+Currently enrolled at the University of New Mexico 
+</p>
+</div>
+
+<div class="box" id="goal">
+<u>
+<h1>
+Goals
+</h1>
+</u>
+<p>
+Dion's Trainer(2015-2017)- trained crew and made delicous pizzas
+<br>
+New Mexico Apartment Advisor's Administrative Assistance(2016-2017)- Completed various administrative tasks
+<br>
+Freelance Website Designer(2017-Present)- creates custom functional fully fledgeed websites
+</p>
+</div>
+
+<div class="box" id="achievements">
+<u>
+<h1>
+Achievements
+</h1>
+</u>
+<p>
+Top 10 Sandia High School
+<br>
+Helped with many Wilderness Restoration Projects
+<br>
+
+</p>
+</div>
+
+
+<div class="box" id="work">
+<u>
+<h1>
+Work Experience
+</h1>
+</u>
+<p>
+Dion's Trainer(2015-2017)- trained crew and made delicous pizzas
+<br>
+New Mexico Apartment Advisor's Administrative Assistance(2016-2017)- Completed various administrative tasks
+<br>
+Freelance Website Designer(2017-Present)- creates custom functional fully fledgeed websites
+</p>
+</div>
+
+
+<canvas id="backdrop" style="z-index:-1;position:fixed;background-color:black;">
+</canvas>
+
+<script>
+numparticles=10;
+var canvas=document.getElementById("backdrop");
+var ctx = canvas.getContext('2d');
+canvas.width  = window.innerWidth;
+canvas.height = window.innerHeight;
+ctx.fillStyle="white";
+ctx.strokeStyle="white";
+ctx.lineWidth=1;
+var h=canvas.height;
+var w=canvas.width;
+var particlesx=[];
+var particlesy=[];
+var particlesdx=[];
+var particlesdy=[];
+var c=0;
+while(c<numparticles){
+	particlesx[c]=Math.random()*w;
+	particlesy[c]=Math.random()*h;
+	particlesdx[c]=Math.random()*2-1;
+	particlesdy[c]=Math.random()*2-1;
+	c++;
+}
+setInterval(particlerender,5);
+
+function particlerender(){
+ctx.clearRect(0,0,w,h);
+
+	c=0;
+	while(c<numparticles){
+		x=Math.round(particlesx[c])+0.5;
+		y=Math.round(particlesy[c])+0.5;
+		ctx.beginPath();
+ctx.arc(x,y,5,0,2*Math.PI);
+ctx.fill();
+		particlesx[c]=particlesx[c]+particlesdx[c];
+		particlesy[c]=particlesy[c]+particlesdy[c];
+	if(particlesx[c]<0||particlesx[c]>w){
+		particlesdx[c]=particlesdx[c]*-1;
+	}
+	if(particlesy[c]<0||particlesy[c]>h){
+		particlesdy[c]=particlesdy[c]*-1;
+	}	
+		c++;
+	}
+
+
+	c=0;
+	while(c<numparticles){
+		x=particlesx[c];
+		y=particlesy[c];
+		ctx.beginPath();
+		ctx.moveTo(Math.round(x)+0.5,Math.round(y)+0.5);
+		var i=0;
+		while(i<numparticles){
+			ctx.lineTo(Math.round(particlesx[i])+0.5,Math.round(particlesy[i])+0.5);
+			ctx.stroke();
+			i++;
+		}
+		c++;
+	}
+
+
+}
+</script>
+</body>
+</html>
