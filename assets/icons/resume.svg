@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+fill="#212121" stroke="#eee" style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;">
+<path style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M438 2053 l-198 -197 0 -891 c0 -979 -4 -917 60 -950 44 -23 1606
+-23 1650 0 64 33 60 -45 60 1110 0 1155 4 1077 -60 1110 -25 13 -121 15 -671
+15 l-643 0 -198 -197z m1477 -928 l0 -1030 -790 0 -790 0 -3 860 -2 860 140
+140 140 140 0 -107 c0 -121 2 -118 -86 -118 l-54 0 0 -45 0 -45 73 0 c82 0
+131 22 147 66 6 14 10 90 10 170 l0 144 608 -2 607 -3 0 -1030z"/>
+<path style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M1109 2031 l-29 -29 0 -314 c0 -342 0 -343 58 -367 20 -8 115 -11
+330 -9 l302 3 27 28 28 27 3 302 c2 215 -1 310 -9 330 -24 58 -25 58 -367 58
+l-314 0 -29 -29z m631 -341 c0 -253 -7 -331 -23 -251 -7 35 -63 109 -103 136
+l-31 21 24 35 c13 20 26 59 30 87 21 184 -220 275 -334 125 -25 -32 -28 -45
+-28 -107 0 -59 4 -77 24 -104 l23 -33 -23 -17 c-43 -29 -82 -76 -105 -127
+l-23 -50 0 283 -1 282 285 0 285 0 0 -280z m-241 126 c27 -14 51 -53 51 -82 0
+-28 -28 -70 -55 -82 -42 -19 -74 -14 -106 17 -78 78 11 198 110 147z m46 -309
+c36 -20 85 -77 85 -98 0 -5 -79 -9 -175 -9 -147 0 -175 2 -175 15 0 22 60 86
+95 101 48 21 124 17 170 -9z"/>
+<path style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M850 1075 l0 -45 370 0 370 0 0 45 0 45 -370 0 -370 0 0 -45z"/>
+<path  style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M660 845 l0 -45 465 0 465 0 0 45 0 45 -465 0 -465 0 0 -45z"/>
+<path style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M660 610 l0 -50 465 0 465 0 0 50 0 50 -465 0 -465 0 0 -50z"/>
+<path style="enable-background:new 0 0 256 256;background-color:#eee;fill:#212121;" d="M660 375 l0 -45 373 0 372 0 0 45 0 45 -372 0 -373 0 0 -45z"/>
+</g>
+</svg>

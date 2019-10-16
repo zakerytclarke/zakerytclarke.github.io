@@ -1,526 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="theme-color" content="white"/>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<title>
-Zakery Clarke
-</title>
-<style>
-body{
-color:black;
-background-color:#efefef;
-}
-.circle{
-text-align:center;
-width:24%;
-display:inline-block;
-overflow:hidden;
-vertical-align:top;
-}
-.divider{
-width:90%;
-border-top:3px black solid;
-border-bottom:3px; black solid;
-display:block;
-margin-left:5%;
-padding:15px;
-}
-
-.ca{
-width:10vw;
-height:10vw;
-border-radius:50%;
-position:absolute;
-z-index:-10;
-top:0%;
-}
-img{
-width:80%;border-radius:50%;
-}
-a{
-text-decoration:none;
-color:black;
-}
-@keyframes c1{
-  0%{top:100%;}
-  100%{top:0%;}
-}
-  @keyframes c2{
-  0%{top:100%;left:100%;}
-  100%{top:0%;left:7%;}
-}
-  @keyframes c3{
-  0%{left:100%;}
-  100%{left:14%;}
-}
-.descriptor{
-  margin-top:-10px;
-  padding-top:0;
-  text-align:center;
-}
-.menu{
-  box-shadow:1px 1px 2px rgba(0,0,0,0.3);
-  background-color:#e8e8e8;
-  display:inline-block;
-  color:black;
-  padding-right:30px;
-  padding-left:30px;
-  padding:5px;
-}
-.menu:hover{
- background-color:white;
-  }
-.anchor:target{
-  padding-top:-20%;
-}
-h2 span {
-  margin-top:-300px;
-  padding-bottom: 300px;
-  display: block;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zakery Clarke</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-<div style="box-shadow:2px 2px 20px rgba(0,0,0,0.3);left:0;top:0;width:100%;padding:10px;margin-bottom:5%;position:fixed;background-color:#f2f2f2;">
-<h1 style="z-index:110;position:relative;">
-Zakery Clarke
-</h1>
-<div style="right:0px;top:0;position:absolute;text-align:right;margin-right:50px;z-index:101;">
-<a href="mailto:zakerytclarke@gmail.com">
-<h3>
-zakerytclarke@gmail.com
-</h3>
-</a>
-<a href="tel:1(505)234-9665">
-<h3>
-1.505.234.9665
-</h3>
-</a>
-</div>
-
-<div class="ca" style="background-color:rgba(255,0,0,0.6);left:0%;animation:c1 2s;position:fixed;z-index:100;">
-</div>
-<div class="ca" style="background-color:rgba(0,0,255,0.6);left:7%;animation:c2 2s;position:fixed;z-index:100;">
-</div>
-<div class="ca" style="background-color:rgba(0,255,0,0.6);left:14%;animation:c3 2s;position:fixed;z-index:100;">
-</div>
-
-<div class="ca" style="left:45%;position:fixed;z-index:101;">
-<a href="#top">
-<img src="zak.jpg" style="width:100%;">
-</a>
-</div>
-
-
-<div style="margin-top:40px;text-align:center;width:96%;margin-left:1%;display:block;">
-
-
-<a href="#about">
-<h2 class="menu">
-About
-</h2>
-</a>
-
-<a href="#skills">
-<h2 class="menu">
-Skills
-</h2>
-</a>
-<a href="#work">
-<h2 class="menu">
-Work Experience
-</h2>
-</a>
-<a href="#projects">
-<h2 class="menu">
-Projects
-</h2>
-</a>
-<a href="#passions">
-<h2 class="menu">
-Passions
-</h2>
-</a>
-<a href="#sample">
-<h2 class="menu">
-Portfolio
-</h2>
-</a>
-</div>
-
-</div>
-<span id="top"> &nbsp; </span>
-
-<div class="divider"  style="margin-top:200px;text-align:center;">
-
-
-    <a href="resume.pdf" target="_blank">
-    <div class="circle">
-    <img src="resume.png"  style="background-color:white;">
-    <h3 style="text-align:center;">
-    Resumé
-    </h3>
-    </div>
+  <div id="header" style="display:flex;">
+    <h1 id="name" style="flex:1;vertical-align:middle;">
+      <a href="./index.html">
+      Zakery Clarke
     </a>
-  <a href="https://github.com/zakerytclarke" target="_blank">
-  <div class="circle">
-  <img src="github.gif">
-  <h3 style="text-align:center;">
-Portfolio
-  </h3>
-  </div>
-  </a>
+    </h1>
+    <div id="headerImg" style="flex:1;text-align:center;vertical-align:middle;">
+      <img src="./assets/icons/zak.png" style="width:10vw;border-radius:50%;">
+    </div>
 
-  <a href="https://codepen.io/zakerytclarke/" target="_blank">
-  <div class="circle">
-  <img src="codepen.png">
-  <h3 style="text-align:center;">
-  Codepen
-  </h3>
-  </div>
-  </a>
-
-
-</div>
-<div class="divider">
-  <h2>
-  <span id="about"> &nbsp; </span>
-  About
-  </h2>
-<p>
-Hi there! My name is Zakery Clarke and I am a self-taught programmer who has a variety of skills from website design to microproccesors. My specialization is in website design and I am interested in applied machine learning to solve a plethora of problems. I have here a repository of my projects and passions, I hope you enjoy!
-</p>
-</div>
-<div class="divider">
-  <h2 id="skills">
-  <span id="skills"> &nbsp; </span>
-  Skills
-  </h2>
-
-<div class="divider" style="width:20%;display:inline-block;text-align:center;vertical-align:top;">
-<h2>
-<u>
-Expertise
-</u>
-</h2>
-<div style="width:100%;">
-<img src="js.png">
-</div>
-<div style="width:100%;">
-<img src="html.png">
-</div>
-<div style="width:100%;">
-<img src="css.png">
-</div>
-<div style="width:100%;">
-<img src="xls.jpg">
-<h3 style="text-align:center;">
-Excel
-</h3>
-</div>
-
-</div>
-
-<div class="divider" style="width:20%;display:inline-block;text-align:center;vertical-align:top;">
-<h2>
-<u>
-Proficient
-</u>
-</h2>
-<div style="width:100%;">
-<img src="wordpress.png">
-<h3 style="text-align:center;">
-WordPress
-</h3>
-</div>
-<div style="width:100%;">
-<img src="php.png">
-<h3 style="text-align:center;">
-PHP
-</h3>
-</div>
-
-<div style="width:100%;">
-<img src="mp.jpg">
-<h3 style="text-align:center;">
-Embeded C/C++
-</h3>
-</div>
-
-</div>
-
-<div class="divider" style="width:20%;display:inline-block;text-align:center;vertical-align:top;">
-<h2>
-<u>
-Learning
-</u>
-</h2>
-<div style="width:100%;">
-<img src="tensorflow.png">
-<h3 style="text-align:center;">
-Machine Learning
-</h3>
-</div>
-<div style="width:100%;">
-<img src="python.png">
-<h3 style="text-align:center;">
-Python
-</h3>
-</div>
-</div>
-
-
-</div>
-<div class="divider">
-  <h2>
-  <span id="work"> &nbsp; </span>
-  Work Experience
-  </h2>
-
-<div class="circle">
-<img src="website.png">
-<h3 style="text-align:center;">
-&lt;Clarke&gt;&lt;/Computing&gt;
-</h3>
-<p class="descriptor">
-Freelance Website Developement<br>
-<b>2016-Present</b>
-</p>
-</div>
-
-<div class="circle">
-<img src="etrans.png">
-<h3 style="text-align:center;">
-E-TransControl
-</h3>
-<p class="descriptor">
-Embeded Systems Programmer and Website Design<br>
-<b>2017-Present</b>
-</p>
-</div>
-
-<div class="circle">
-<img src="nmapt.png">
-<h3 style="text-align:center;">
-NM Apartment Advisors
-</h3>
-<p class="descriptor">
-Administrative Assistant that managed a variety of office tasks<br>
-<b>2014-2016</b>
-</p>
-</div>
-
-
-</div>
-
-<div class="divider">
-  <h2>
-  <span id="projects"> &nbsp; </span>
-  Projects
-  </h2>
-
-<div class="divider">
-
-<a href="https://zakerytclarke.github.io/dingo.js">
-<div class="circle">
-<img src="https://dingojs.github.io/dingo.jpg">
-<h3 style="text-align:center;">
-Dingo.js
-</h3>
-<p class="descriptor">
-A lightweight JS framework for component developement<br>
-<b>Lead Developer</b>
-</p>
-</div>
-</a>
-
-<a href="https://github.com/zakerytclarke/nautilus.js">
-<div class="circle">
-<img src="https://zakerytclarke.github.io/nautilus.js/nautilus.jpg">
-<h3 style="text-align:center;">
-Nautilus.js
-</h3>
-<p class="descriptor">
-A JS library to create and train Neural Networks in browser<br>
-<b>Lead Developer</b>
-</p>
-</div>
-</a>
-
-<a href="https://github.com/zakerytclarke/server.php">
-<div class="circle">
-<img src="server.png">
-<h3 style="text-align:center;">
-SERVER.PHP
-</h3>
-<p class="descriptor">
-Lightweight PHP File Manager<br>
-<b>Lead Developer</b>
-</p>
-</div>
-</a>
-
-<a href="https://zakerytclarke.github.io/urlembeder">
-<div class="circle">
-<img src="urlembeder.png">
-<h3 style="text-align:center;">
-URL Embeder
-</h3>
-<p class="descriptor">
-Clever Testing Server for JS<br>
-<b>Lead Developer</b>
-</p>
-</div>
-</a>
-
-<a href="https://zakerytclarke.github.io/calc42">
-<div class="circle">
-<img src="https://zakerytclarke.github.io/calc42/42.png">
-<h3 style="text-align:center;">
-Calc 42
-</h3>
-<p class="descriptor">
-Programable Postfix Calculator<br>
-<b>Sole Developer</b>
-</p>
-</div>
-</a>
-
-  <a href="https://play.google.com/store/apps/details?id=appinventor.ai_zakerytclarke.atlascalc">
-<div class="circle">
-<img src="https://lh3.googleusercontent.com/9af7y8YrSe4mHKVoZSkIC_RHDPFdSEv2Jx3SLwrYY-Ha2oYuxYUY5PMULbG2KmLAhNs=w300-rw">
-<h3 style="text-align:center;">
-Atlas Calc
-</h3>
-<p class="descriptor">
-A functional calculator with advanced graphing, unit conversions, and more<br>
-<b>Lead Developer</b>
-</p>
-</div>
-</a>
-
-</div>
-
-  <div class="divider">
-  <h2>
-  Competitions
-  </h2>
-  <a href="https://github.com/zakerytclarke/unmappcontest2017">
-  <div class="circle">
-  <img src="https://zakerytclarke.github.io/unmappcontest2017/lobosafe.png">
-  <h3 style="text-align:center;">
-  LoboSafe
-  </h3>
-  <p class="descriptor">
-  UNM App Contest Finalist<br>
-  <b>Lead Developer</b>
-  </p>
-  </div>
-  </a>
-
-  </div>
+    <div style="flex:1;text-align:right;margin-right:5vw;margin-top:20px;vertical-align:middle;">
+      <span style="width:100%;display:block;">
+        <a href="mailto:zakerytclarke@gmail.com" style="color:#ccc;border-bottom: none;">
+          zakerytclarke@gmail.com
+        </a>
+      </span>
+      <span style="width:100%;display:block;margin-right:30px;">
+        <a href="tel:5052349665" style="color:#ccc;border-bottom: none;">
+          1.505.234.9665
+        </a>
+      </span>
+    </div>
   </div>
 
-<div class="divider">
-  <h2>
-  <span id="passions"> &nbsp; </span>
-  Passions
-  </h2>
-  <a href="https://zakeryclarkephotography.wordpress.com/">
-<div class="circle">
-<img src="map.png" style="border-radius:0%;">
-<h3 style="text-align:center;">
-Traveling
-</h3>
-</div>
-</a>
-<div class="circle">
-<img src="nmbp.jpg">
-<h3 style="text-align:center;">
-Backpacking
-</h3>
-</div>
-<div class="circle">
-<img src="earth.jpg">
-<h3 style="text-align:center;">
-Sustainable Living
-</h3>
-</div>
+  <div id="main">
+    <div style="width:100%;text-align:center;margin-bottom:50px;">
+      <h2 id="tagline">
+        Full Stack Web Developer • Bachelor's CS • Pursuing Master's of CS at UNM
+      </h2>
+      <h2 id="taglineMobile">
+        Full Stack Web Developer<br>
+        Bachelor's CS</br>
+        Pursuing Master's of CS at UNM
+      </h2>
+    </div>
 
-<a href="https://zakeryclarkephotography.wordpress.com/">
-<div class="circle">
-<img src="photo.jpg">
-<h3 style="text-align:center;">
-Photography
-</h3>
-</div>
-</a>
+    <div style="width:100%;text-align:center;display:flex;">
 
-</div>
+      <a href="./resume.html" style="flex:1;">
+      <div style="text-align:center;">
+        <img style="width:50%;" src="./assets/icons/resume.svg">
+        <h2>
+          Resume
+        </h2>
+      </div>
+    </a>
+    <a href="./portfolio.html" style="flex:1;">
+      <div style="text-align:center;">
+        <img style="width:50%;" src="./assets/icons/portfolio.svg">
+        <h2>
+          Portfolio
+        </h2>
+      </div>
+    </a>
+    <a href="https://github.com/zakerytclarke"  target="_blank" style="flex:1;">
+      <div style="text-align:center;">
+        <img style="width:50%;" src="./assets/icons/githubGrey.svg">
+        <h2>
+          Github
+        </h2>
+      </div>
+    </a>
+
+    </div>
 
 
-<div class="divider">
-<h2>
-   <span id="sample"> &nbsp; </span>
-Portfolio
-</h2>
-<div style="width:100%;text-align:center;"> 
-<img src="dingo.JPG" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-<img src="chatbot.png" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-<img src="nmbp.png" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-<img src="santa.png" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-<img src="emma.png" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-<img src="e-transbg.png" style="width:45%;margin-left:5%;margin-top:30px;border-radius:0px;display:inline-block;">
-  </div>
-</div>
 
-<div class="divider">
-  <h2>
- 
-  Sample Work
-</h2>
 
-<div style="width:48%;display:inline-block;padding:1%;">
-<p data-height="265" data-theme-id="0" data-slug-hash="vWbgJM" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="Login Form w/ Google Integration" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/vWbgJM/">Login Form w/ Google Integration</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</div>
-<div style="width:48%;display:inline-block;">
-<p data-height="265" data-theme-id="dark" data-slug-hash="ZaRMNv" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="Material Design" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/ZaRMNv/">Material Design</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</div>
-<div style="width:48%;display:inline-block;padding:1%;">
-<p data-height="265" data-theme-id="dark" data-slug-hash="bYzJor" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="Spiral" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/bYzJor/">Spiral</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</div>
-<div style="width:48%;display:inline-block;">
-<p data-height="265" data-theme-id="dark" data-slug-hash="gGMjyN" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="Particles" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/gGMjyN/">Particles</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</div>
- <div style="width:48%;display:inline-block;"> 
-<p data-height="265" data-theme-id="dark" data-slug-hash="ZagREK" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="X-Mas Tree ∞" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/ZagREK/">X-Mas Tree ∞</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>  
-  </div>
-  <div style="width:48%;display:inline-block;">
-<p data-height="265" data-theme-id="dark" data-slug-hash="QOENdw" data-default-tab="result" data-user="zakerytclarke" data-embed-version="2" data-pen-title="Liquid Button" class="codepen">See the Pen <a href="https://codepen.io/zakerytclarke/pen/QOENdw/">Liquid Button</a> by Zakery Clarke (<a href="https://codepen.io/zakerytclarke">@zakerytclarke</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
   </div>
 
-</div>
+  <script>
 
-
-
-
-
-<script>
-if (screen.height>screen.width) {
-var elms = document.getElementsByClassName('circle');
-for(var i=0;i<elms.length;i++){
-elms[i].style.width="31%";
-}
-}
-</script>
+  </script>
 </body>
 </html>

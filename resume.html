@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zakery Clarke</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="header" style="display:flex;">
+    <h1 id="name" style="flex:1;vertical-align:middle;">
+      <a href="./index.html">
+      Zakery Clarke
+    </a>
+    </h1>
+    <div id="headerImg" style="flex:1;text-align:center;vertical-align:middle;">
+      <img src="./assets/icons/zak.png" style="width:10vw;border-radius:50%;">
+    </div>
+
+    <div style="flex:1;text-align:right;margin-right:5vw;margin-top:20px;vertical-align:middle;">
+      <span style="width:100%;display:block;">
+        <a href="mailto:zakerytclarke@gmail.com" style="color:#ccc;border-bottom: none;">
+          zakerytclarke@gmail.com
+        </a>
+      </span>
+      <span style="width:100%;display:block;margin-right:30px;">
+        <a href="tel:5052349665" style="color:#ccc;border-bottom: none;">
+          1.505.234.9665
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div id="main" style="display:flex;">
+
+  </div>
+
+
+  <script>
+    var resume={
+      work:[
+        {
+          title:"Lead Developer",
+          company:"E-Center",
+          year:"2019-Current",
+          description:"Sole Developer of E-Sports Statistics Web App<br> Image Recognition \n",
+          tech:["node","html5","css3","js"]
+        },
+        {
+          title:"Freelance Web Developer",
+          company:"Clarke Computing",
+          year:"2016-Current",
+          description:"Developed variety of websites for many clients\n",
+          tech:["html5","css3","js","wordpress"]
+        },
+        {
+          title:"Software Developer",
+          company:"E-TransControl",
+          year:"2016-2019",
+          description:"Web Development\n Embedded Processor Development\n",
+          tech:["c","html5","css3","js","wordpress"]
+        }
+      ],
+      education:[
+        {
+          title:"Masters CS",
+          school:"University of New Mexico",
+          year:"2019-Current",
+          tagline:"Focus in Artificial Intelligence & Compilers"
+        },
+        {
+          title:"Undergraduate CS",
+          school:"University of New Mexico",
+          year:"2016-2019",
+          tagline:"Minor in Mathematics"
+        }
+      ],
+      interests:[
+        {
+          title:"Artificial Intelligence",
+          icon:"ml",
+          description:""
+        },
+        {
+          title:"Functional Programming & Compilers",
+          icon:"lambda",
+          description:""
+        },
+        {
+          title:"Distributed Computing & Blockchain",
+          icon:"blockchain",
+          description:""
+        },
+      ]
+    };
+
+    var out="";
+
+
+    out+="<div style='width:40%;margin-right:10%;'>";
+    out+='<div class="resumeBox"><h2>Education</h2><div>';
+
+    for(var i=0;i<resume.education.length;i++){
+      out+="<div style='border-bottom: 1px solid #444444;'>";
+      out+="<h2>"+resume.education[i].title+"</h2>";
+      out+="<p><b>"+resume.education[i].school+"</b>&nbsp;&nbsp;&nbsp;&nbsp;"+resume.education[i].year+"<br>"+resume.education[i].tagline+"</p>";
+      out+="</div>";
+    }
+    out+="</div></div>";
+
+    out+='<div class="resumeBox" style="margin-top:-50px;"><h2>Research Interests</h2><div><br>';
+    for(var i=0;i<resume.interests.length;i++){
+      out+="<div style='border-bottom: 1px solid #444444;'>";
+      out+="<img style='width:4vw;vertical-align:middle;border-radius:2vmin;margin-right:10px;display:inline-block;' src='./assets/icons/tech/"+resume.interests[i].icon+".svg'>";
+      out+="<h3 class='interestText' style='display:inline-block;vertical-align:middle;'>"+resume.interests[i].title+"</h3>";
+      out+="<p>"+resume.interests[i].description+"</p>";
+      out+="</div>";
+    }
+
+
+    out+="</div></div>";
+
+
+    out+='<div id="links" class="resumeBox" style="margin-top:-50px;page-break-after:always;"><h2>Links & Portfolio</h2><div style="vertical-align:top;"><br>';
+    out+=`  <div style="display:inline-block;width:10%;text-align:center;">
+            <img src='./assets/qr.svg' style="width:75%;display:inline-block;">
+            </div>
+            <div style="width:65%;display:inline-block;text-align:right;vertical-align:top;margin:-13px;">
+              <h5 style="display:inline-block;font-size:80%;vertical-align:middle;">
+                https://github.com/zakerytclarke
+              </h5>
+              <img src='./assets/icons/github.svg' style="width:5%;display:inline-block;vertical-align:middle;">
+              <br>
+                <h5 style="display:inline-block;font-size:80%;vertical-align:middle;">
+                  https://zclarke.xyz
+                </h5>
+                <img src='./assets/icons/www.png' style="width:5%;display:inline-block;vertical-align:middle;margin-top:0;">
+            </div>
+          </div>`;
+
+    out+="</div>";
+    out+="</div></div></div>";
+
+
+        out+="<div style='width:40%;margin-right:10%;'>"
+        out+='<div class="resumeBox"><h2>Work Experience</h2><div>';
+
+        for(var i=0;i<resume.work.length;i++){
+          out+="<h2>"+resume.work[i].company+"</h2>";
+          out+="<p><b>"+resume.work[i].title+"</b>&nbsp;&nbsp;&nbsp;&nbsp;"+resume.work[i].year+"<br>"+resume.work[i].description+"</p>";
+          out+="<div style='width:100%;border-bottom: 1px solid #444444;'>";
+          for(var j=0;j<resume.work[i].tech.length;j++){
+            out+="<img style='width:4vw;border-radius:2vmin;margin-right:10px;' src='./assets/icons/tech/"+resume.work[i].tech[j]+".svg'>";
+          }
+          out+="</div>"
+        }
+        out+="</div></div></div>";
+
+
+
+    //out+='<img id="qr" src="./assets/qr.svg">';
+    document.getElementById("main").innerHTML+=out;
+  </script>
+</body>
+</html>

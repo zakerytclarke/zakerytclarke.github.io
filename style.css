@@ -1,0 +1,243 @@
+body {
+	margin: 5% auto;
+	background: #f2f2f2;
+	color: #444444;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	text-shadow: 0 1px 0 #ffffff;
+	max-width: 73%;
+}
+
+code {
+	background: white;
+}
+
+a {
+	text-decoration: none;
+	color: #444444;
+}
+
+#name > a
+{
+	text-decoration: none;
+	color: #ccc;
+}
+/*
+a {
+	border-bottom: 1px solid #444444;
+	color: #444444;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 0;
+}
+*/
+
+#header{
+  position:absolute;
+  left:0;
+  top:0;
+  width:95%;
+  padding-left:5%;
+
+  font-size:125%;
+
+  color:#ccc;
+  background-color:#212121;
+}
+
+#headerImg{
+	vertical-align:middle;
+}
+
+
+#tagline{
+	text-align:center;
+}
+
+#taglineMobile{
+	text-align:center;
+	display:none;
+}
+
+
+h2{
+	margin-bottom:-10px;
+}
+
+#main{
+  width:90%;
+  position:absolute;
+  top:20vh;
+  left:0;
+
+  margin-left:5vw;
+  margin-right:5vw;
+
+}
+
+.resumeBox{
+	width:100%;
+
+	veritcal-align:top;
+	display:inline-block;
+}
+
+.resumeBox > h2{
+	padding-left:30px;
+	margin-bottom:0px;
+	padding-bottom:0;
+
+  border-radius:10px;
+}
+.resumeBox > div{
+  width:100%;
+	text-align: left;
+	vertical-align:top;
+	margin-top:0;
+  padding-top:0px;
+	padding-left:20px;
+  padding-bottom:20px;
+
+	border-top:5px #212121 solid;
+  border-left:5px #212121 solid;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+.portfolio{
+  width:100%;
+  display:flex;
+
+  padding-top:20px;
+  padding-bottom:20px;
+
+  border-top:5px#212121 solid;
+  border-bottom:5px#212121 solid;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+.image{
+	flex:1;
+  vertical-align:middle;
+  text-align:center;
+}
+.additionalImage{
+	flex:1;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.infoBox{
+  flex:1;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.portfolio > div > img{
+  width:80%;
+  margin-left:10%;
+  vertical-align:top;
+  display:inline-block;
+  border-radius:10px;
+}
+
+
+.portfolio > div > h1{
+	font-size:175%;
+}
+
+.icon{
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.icon > img{
+	width:2.5vw;
+}
+
+.interestText{
+	font-size:100%;
+}
+
+
+#qr{
+	display:none;
+	width:20%;
+}
+
+#links{
+	display:none;
+}
+
+
+@media(orientation:portrait){
+	#headerImg{
+		display:none;
+	}
+
+	.description{
+		display:none;
+	}
+	.image{
+		flex:1.6;
+	}
+	.additionalImage{
+		background-color:red;
+		flex:0;
+		display:none;
+	}
+
+	.interestText{
+		font-size:85%;
+	}
+
+	#tagline{
+		display:none;
+	}
+	#taglineMobile{
+		display:block;
+	}
+}
+
+@media(orientation:landscape){
+
+	#tagline{
+		display:block;
+	}
+
+	#taglineMobile{
+		display:none;
+	}
+}
+
+/*
+	Used to Print Resume
+*/
+@media print {
+
+	#main{
+		margin-top:-100px;
+		margin-top:-100px;
+	}
+	#headerImg{
+		display:none;
+	}
+	#qr{
+		display:block;
+	}
+	#links{
+		display:block;
+		display:none;
+		position:absolute;
+		width:40%;
+		top:65vh;
+	}
+
+	.interestText{
+		font-size:85%;
+	}
+}
