@@ -184,7 +184,9 @@ h2{
 	.desktop{
 		display:none;
 	}
-
+	#main{
+		top:5vh;
+	}
 	#name{
 		text-align:center;
 	}
