@@ -33,7 +33,12 @@
     <div id="main" style="padding-top:50px;">
 
 
-
+      <div id="imgZoom">
+        <p onclick="hideImg()">
+          X
+        </p>
+        <img id="imgZoomImg" src="./assets/portfolio/ecenterhome.png">
+      </div>
     </div>
 
 <script>
@@ -335,7 +340,9 @@ function renderItem(json){
         }else{
           out+="<div class='image'>";
         }
+        out+='<span onclick="showImg(`'+json.images[i]+'`)">';
         out+="<img src='"+json.images[i]+"'/>";
+        out+="</span>";
       out+="</div>"
     }
 
@@ -343,6 +350,15 @@ function renderItem(json){
 
 
   document.getElementById("main").innerHTML+=out;
+}
+
+function showImg(img){
+  document.getElementById("imgZoomImg").src=img;
+  document.getElementById("imgZoom").style.display="block";
+}
+
+function hideImg(){
+  document.getElementById("imgZoom").style.display="none";
 }
 </script>
 </body>
