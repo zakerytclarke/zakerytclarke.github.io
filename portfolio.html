@@ -13,8 +13,8 @@
         Zakery Clarke
       </a>
       </h1>
-      <div id="headerImg" style="flex:1;text-align:center;vertical-align:middle;">
-        <img src="./assets/icons/zak.png" style="width:10vw;border-radius:50%;">
+      <div id="headerImg">
+        <img src="./assets/icons/zak.png">
       </div>
 
       <div style="flex:1;text-align:right;margin-right:5vw;margin-top:20px;vertical-align:middle;">
@@ -298,7 +298,7 @@ function renderItem(json){
           if(json.tech){
             out+="<div style='width:100%;'>";
             for(var i=0;i<json.tech.length;i++){
-              out+="<img style='width:4vw;border-radius:2vmin;margin-right:10px;' src='./assets/icons/tech/"+json.tech[i]+".svg'>";
+              out+="<img class='iconTech' src='./assets/icons/tech/"+json.tech[i]+".svg'>";
             }
             out+="</div>"
           }

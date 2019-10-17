@@ -50,6 +50,14 @@ a:hover {
 
 #headerImg{
 	vertical-align:middle;
+	flex:1;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#headerImg > img {
+	width:10vw;
+	border-radius:50%;
 }
 
 
@@ -156,7 +164,13 @@ h2{
 }
 
 .icon > img{
-	width:2.5vw;
+	width:3vw;
+}
+
+.iconTech{
+	width:4vw;
+	border-radius:2vmin;
+	margin-right:10px;
 }
 
 .interestText{
@@ -195,6 +209,21 @@ h2{
 		display:none;
 	}
 
+
+	.icon > img{
+		width:6vw;
+	}
+
+	.iconTech{
+		width:6vw;
+	}
+
+	.infoBox {
+		font-size:175%;
+	}
+	.infoBox > div {
+		font-size:125%;
+	}
 	.description{
 		display:none;
 	}
