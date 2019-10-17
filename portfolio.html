@@ -168,6 +168,7 @@
   github:"https://github.com/zakerytclarke/mu",
   pkg:"",
   stats:"",
+  tags:["Markup Compiler","Stylish Formatting"],
   year:"2018",
   tech:["node","css3","html5"],
   images:["./assets/portfolio/mu.png"]
@@ -282,7 +283,7 @@ function renderItem(json){
             out+="<b>"+json.position+"</b><br>";
           }
           if(json.year){
-            out+="<b> "+json.year+"</b><br>";
+            out+="<b class='portfolioYear'> "+json.year+"</b><br>";
           }
 
           if(json.tags){

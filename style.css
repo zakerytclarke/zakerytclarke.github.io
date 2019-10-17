@@ -219,11 +219,17 @@ h2{
 	}
 
 	.infoBox {
-		font-size:175%;
+		font-size:150%;
 	}
 	.infoBox > div {
 		font-size:125%;
 	}
+
+	.info > p{
+		display:none;
+
+	}
+
 	.description{
 		display:none;
 	}
