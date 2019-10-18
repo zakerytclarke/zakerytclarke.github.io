@@ -60,6 +60,15 @@ a:hover {
 	border-radius:50%;
 }
 
+#contact{
+	flex:1;
+	text-align:right;
+	margin-right:5vw;
+	margin-top:25px;
+	vertical-align:middle;
+	color:#ccc;
+	text-shadow:none;
+}
 
 #imgZoom{
 	display:none;
@@ -80,11 +89,12 @@ a:hover {
 	z-index:100;
 	color:#ccc;
 	font-size:5vmax;
+	cursor:pointer;
 }
 
 #imgZoom > img {
 	margin-top:10vh;
-	width:70vmin;
+	width:80vmin;
 	border-radius:10px;
 }
 
@@ -159,11 +169,13 @@ h2{
 	flex:1;
   vertical-align:middle;
   text-align:center;
+	cursor:pointer;
 }
 .additionalImage{
 	flex:1;
 	vertical-align:middle;
 	text-align:center;
+	cursor:pointer;
 }
 
 .infoBox{
@@ -226,7 +238,7 @@ h2{
 		display:none;
 	}
 	#main{
-		top:5vh;
+		margin-top:-70px;
 	}
 	#name{
 		text-align:center;
@@ -236,7 +248,9 @@ h2{
 		display:none;
 	}
 
-
+	#contact{
+		margin-top:10px;
+	}
 
 	.icon > img{
 		width:6vw;
@@ -310,7 +324,6 @@ h2{
 @media print {
 
 	#main{
-		margin-top:-100px;
 		margin-top:-100px;
 	}
 	#headerImg{
