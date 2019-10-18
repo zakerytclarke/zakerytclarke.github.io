@@ -80,7 +80,8 @@
     year:"2018",
     tech:["node","html5","css3"],
     tags:["Machine Learning","Artificial Intelligence"],
-    images:["./assets/portfolio/sara.png","./assets/portfolio/saradialog.png"]
+    images:["./assets/portfolio/sara.png","./assets/portfolio/saradialog.png"],
+    mobileImg:"./assets/portfolio/saramobile.png"
   },
   {
     title:"Feisty",
@@ -92,7 +93,8 @@
     year:"2019",
     tech:["js","html5","css3"],
     tags:["Charting","Statistical Methods"],
-    images:["./assets/portfolio/feisty.png"]
+    images:["./assets/portfolio/feisty.png"],
+    mobileImg:"./assets/portfolio/feistymobile.png"
   },
   {
   title:"Quark Editor",
@@ -127,7 +129,8 @@
     year:"2018",
     tech:["js","html5","css3"],
     tags:["API Integration","Minimal Design"],
-    images:["./assets/portfolio/smart-mirror.png"]
+    images:["./assets/portfolio/smart-mirror.png"],
+    mobileImg:"./assets/portfolio/mirrormobile.png"
   },
 {
   title:"E-TransControl",
@@ -164,7 +167,7 @@
   year:"2016",
   tech:["html5","css3","js"],
   tags:["Minimalist","Photography","Portfolio"],
-  images:["./assets/portfolio/emmabuck.png"]
+  images:["./assets/portfolio/emmaxbuck.png"]
 },
 {
   title:"μ Markup",
@@ -176,7 +179,9 @@
   tags:["Markup Compiler","Stylish Formatting"],
   year:"2018",
   tech:["node","css3","html5"],
-  images:["./assets/portfolio/mu.png"]
+  images:["./assets/portfolio/mu.png"],
+  mobileImg:"./assets/portfolio/mumobile.png"
+
 },
 {
   title:"Low-Level-Basic",
@@ -334,15 +339,31 @@ function renderItem(json){
       //out+='</div>';
 
     out+="</div>"
+
+    //Render Images
+
+
     for(var i=0;i<json.images.length;i++){
         if(i>0){
           out+="<div class='additionalImage'>"
         }else{
-          out+="<div class='image'>";
+          if(json.mobileImg){
+            out+="<div class='image'>";
+          }else{
+            out+="<div class='image noMobileFlag'>";
+          }
         }
         out+='<span onclick="showImg(`'+json.images[i]+'`)">';
         out+="<img src='"+json.images[i]+"'/>";
         out+="</span>";
+        out+="</div>";
+    }
+
+    if(json.mobileImg){
+      out+="<div class='mobileImage'>";
+      out+='<span onclick="showImg(`'+json.images[i]+'`)">';
+      out+="<img src='"+json.mobileImg+"'/>";
+      out+="</span>";
       out+="</div>"
     }
 

@@ -171,7 +171,20 @@ h2{
   text-align:center;
 	cursor:pointer;
 }
+
+.noMobileFlag{
+	display:block;
+}
+
 .additionalImage{
+	flex:1;
+	vertical-align:middle;
+	text-align:center;
+	cursor:pointer;
+}
+
+.mobileImage{
+	display:none;
 	flex:1;
 	vertical-align:middle;
 	text-align:center;
@@ -252,6 +265,7 @@ h2{
 		margin-top:10px;
 	}
 
+
 	.icon > img{
 		width:6vw;
 	}
@@ -277,11 +291,19 @@ h2{
 	}
 	.image{
 		flex:1.6;
+		display:none;
 	}
 	.additionalImage{
 		background-color:red;
 		flex:0;
 		display:none;
+	}
+
+	.mobileImage{
+		display:block;
+	}
+	.noMobileFlag{
+		display:block;
 	}
 
 	.interestText{
