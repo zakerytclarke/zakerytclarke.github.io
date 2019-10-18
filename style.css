@@ -5,7 +5,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size:100%;
 	line-height: 1.8;
-	text-shadow: 0 1px 0 #ffffff;
+	/*text-shadow: 0 1px 0 #ffffff;*/
 	max-width: 73%;
 }
 
@@ -67,7 +67,6 @@ a:hover {
 	margin-top:25px;
 	vertical-align:middle;
 	color:#ccc;
-	text-shadow:none;
 }
 
 #imgZoom{
@@ -253,7 +252,7 @@ h2{
 	#main{
 		margin-top:-70px;
 	}
-	
+
 	#headerImg{
 		display:none;
 	}
