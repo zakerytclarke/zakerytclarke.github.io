@@ -92,7 +92,7 @@ a:hover {
 }
 
 #imgZoom > img {
-	margin-top:25vh;
+	margin-top:10vh;
 	width:80vmin;
 	border-radius:10px;
 }
@@ -236,6 +236,11 @@ h2{
 
 #links{
 	display:none;
+	position:fixed;
+	width:80vw;
+	left:5.2vw;
+	bottom:10.5vh;
+	height:10vh;
 }
 
 
@@ -334,6 +339,7 @@ h2{
 			top:-10vh;
 		}
 
+
 }
 
 /*
@@ -352,10 +358,6 @@ h2{
 	}
 	#links{
 		display:block;
-		display:none;
-		position:absolute;
-		width:40%;
-		top:65vh;
 	}
 
 	.interestText{

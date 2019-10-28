@@ -15,19 +15,6 @@ var config=
    tags:["Image Recognition","Data Scraping","API Development"],
    images:["./assets/portfolio/ecenterhome.png","./assets/portfolio/ecenterstats.png"]
  },
-   {
-   title:"Clarke Computing",
-   content:"",
-   url:"https://clarkecomputing.io",
-   github:"",
-   pkg:"",
-   stats:"",
-   position:"Freelance Developer",
-   year:"2016",
-   tech:["html5","css3","js"],
-   tags:["Brand Design","Website Design","Digital Marketing"],
-   images:["./assets/portfolio/clarkecomputing.png"]
- },
  {
    title:"Sara.ai",
    content:"",
@@ -42,6 +29,19 @@ var config=
    mobileImg:"./assets/portfolio/saramobile.png"
  },
  {
+   title:"Codely",
+   content:"Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.",
+   url:"http://codely-dev.herokuapp.com",
+   github:"https://github.com/zakerytclarke/codely",
+   pkg:"",
+   stats:"",
+   year:"2019",
+   tech:["js","html5","css3","node"],
+   tags:["Web IDE","Coding Platform"],
+   images:["./assets/portfolio/codely.png"],
+   mobileImg:"./assets/portfolio/codelymobile.png"
+ },
+ {
    title:"Feisty",
    content:"Smart chart rendering for large sets of data. Preserves maxes, mins and other general trends on zoom.",
    url:"https://zclarke.xyz/feisty/",
@@ -54,6 +54,19 @@ var config=
    images:["./assets/portfolio/feisty.png"],
    mobileImg:"./assets/portfolio/feistymobile.png"
  },
+ {
+ title:"Clarke Computing",
+ content:"",
+ url:"https://clarkecomputing.io",
+ github:"",
+ pkg:"",
+ stats:"",
+ position:"Freelance Developer",
+ year:"2016",
+ tech:["html5","css3","js"],
+ tags:["Brand Design","Website Design","Digital Marketing"],
+ images:["./assets/portfolio/clarkecomputing.png"]
+},
  {
  title:"Quark Editor",
  content:"An online IDE that allows easy editing of git repositories stored on Github.",
@@ -210,6 +223,65 @@ var config=
  images:["./assets/portfolio/escher.png"]
 },
 ];
+
+var resume={
+  work:[
+    {
+      title:"Lead Developer",
+      company:"E-Center",
+      year:"2019-Current",
+      description:"Sole Developer of E-Sports Statistics Web App<br> Image Recognition \n",
+      tech:["node","html5","css3","js"]
+    },
+    {
+      title:"Freelance Web Developer",
+      company:"Clarke Computing",
+      year:"2016-Current",
+      description:"Developed variety of websites for many clients\n",
+      tech:["html5","css3","js","wordpress"]
+    },
+    {
+      title:"Software Developer",
+      company:"E-TransControl",
+      year:"2016-2019",
+      description:"Web Development<br> Embedded Processor Development\n",
+      tech:["c","html5","css3","js","wordpress"]
+    }
+  ],
+  education:[
+    {
+      title:"Masters CS",
+      school:"University of New Mexico",
+      year:"2019-Current",
+      tagline:"Focus in Artificial Intelligence & Compilers"
+    },
+    {
+      title:"Undergraduate CS",
+      school:"University of New Mexico",
+      year:"2016-2019",
+      tagline:"Minor in Mathematics"
+    }
+  ],
+  interests:[
+    {
+      title:"Artificial Intelligence",
+      icon:"ml",
+      description:""
+    },
+    {
+      title:"Functional Programming & Compilers",
+      icon:"lambda",
+      description:""
+    },
+    {
+      title:"Distributed Computing & Blockchain",
+      icon:"blockchain",
+      description:""
+    },
+  ]
+};
+
+
 
 var resume={
   work:[

@@ -13,19 +13,6 @@ var config=
    tags:["Image Recognition","Data Scraping","API Development"],
    images:["./assets/portfolio/ecenterhome.png","./assets/portfolio/ecenterstats.png"]
  },
-   {
-   title:"Clarke Computing",
-   content:"",
-   url:"https://clarkecomputing.io",
-   github:"",
-   pkg:"",
-   stats:"",
-   position:"Freelance Developer",
-   year:"2016",
-   tech:["html5","css3","js"],
-   tags:["Brand Design","Website Design","Digital Marketing"],
-   images:["./assets/portfolio/clarkecomputing.png"]
- },
  {
    title:"Sara.ai",
    content:"",
@@ -40,6 +27,19 @@ var config=
    mobileImg:"./assets/portfolio/saramobile.png"
  },
  {
+   title:"Codely",
+   content:"Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.",
+   url:"http://codely-dev.herokuapp.com",
+   github:"https://github.com/zakerytclarke/codely",
+   pkg:"",
+   stats:"",
+   year:"2019",
+   tech:["js","html5","css3","node"],
+   tags:["Web IDE",""],
+   images:["./assets/portfolio/codely.png"],
+   mobileImg:"./assets/portfolio/codelymobile.png"
+ },
+ {
    title:"Feisty",
    content:"Smart chart rendering for large sets of data. Preserves maxes, mins and other general trends on zoom.",
    url:"https://zclarke.xyz/feisty/",
@@ -52,6 +52,19 @@ var config=
    images:["./assets/portfolio/feisty.png"],
    mobileImg:"./assets/portfolio/feistymobile.png"
  },
+ {
+ title:"Clarke Computing",
+ content:"",
+ url:"https://clarkecomputing.io",
+ github:"",
+ pkg:"",
+ stats:"",
+ position:"Freelance Developer",
+ year:"2016",
+ tech:["html5","css3","js"],
+ tags:["Brand Design","Website Design","Digital Marketing"],
+ images:["./assets/portfolio/clarkecomputing.png"]
+},
  {
  title:"Quark Editor",
  content:"An online IDE that allows easy editing of git repositories stored on Github.",
