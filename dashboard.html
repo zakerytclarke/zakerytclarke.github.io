@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zakery Clarke</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+  .icon{
+    width:5vw;
+    border-radius:50%;
+    display:inline-block;
+    margin-left:20px;
+    margin-right:20px;
+    box-shadow: 5px 5px black;
+  }
+  </style>
+</head>
+<body style="overflow:hidden;background-image: url('./assets/dashboard/background.jpg');background-size:cover;background-repeat:no-repeat;background-color:black;">
+  <!-- <div id="header" style="display:flex;">
+    <h1 id="name" style="flex:1;vertical-align:middle;">
+      <a href="./index.html" style="color:#ccc;text-shadow:none;">
+        Zakery Clarke
+      </a>
+    </h1>
+    <div id="headerImg">
+      <img src="./assets/icons/zak.png">
+    </div> -->
+
+    <!-- <div id="contact">
+    <span style="width:100%;display:block;">
+    <b>
+    <a href="mailto:zakerytclarke@gmail.com" style="color:#ccc;border-bottom: none;">
+    zakerytclarke@gmail.com
+  </a>
+</b>
+</span>
+<span style="width:100%;display:block;margin-right:30px;">
+<b>
+<a href="tel:5052349665" style="color:#ccc;border-bottom: none;">
+1.505.234.9665
+</a>
+</b>
+</span>
+</div> -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+<script>
+if (false&&annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'hi': function() {
+      console.log("hello");
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+
+  annyang.addCallback('result', function(phrases) {
+    console.log(phrases);
+  });
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
+<script>
+function showImg(img){
+  document.getElementById("imgZoomImg").src=img;
+  document.getElementById("imgZoom").style.display="block";
+}
+
+function hideImg(){
+  document.getElementById("imgZoom").style.display="none";
+}
+</script>
+<div id="main" style="width:100%;">
+
+
+  <div id="imgZoom">
+    <p onclick="hideImg()">
+      X
+    </p>
+    <img id="imgZoomImg" src="./assets/portfolio/ecenterhome.png">
+  </div>
+
+  <div id="menu" style="position:fixed;left:0px;top:7vh;width:100%;text-align:left;">
+    <a href="https://google.com" target="_blank"><img src="./assets/dashboard/apps/appgoog.png" class="icon"/></a>
+    <a href="https://github.com" target="_blank"><img src="./assets/dashboard/apps/appgithub.gif" class="icon"/></a>
+    <a href="https://drive.google.com/drive" target="_blank"><img src="./assets/dashboard/apps/appdrive.ico" class="icon"/></a>
+    <a href="https://mail.google.com/" target="_blank"><img src="./assets/dashboard/apps/appgmail.png" class="icon"/></a>
+    <a href="https://email12.godaddy.com/" target="_blank"><img src="./assets/dashboard/apps/email.png" class="icon"/></a>
+    <a href="https://repl.it/repls" target="_blank"><img src="./assets/dashboard/apps/code.png" class="icon"/></a>
+    <a href="https://open.spotify.com/?_ga=2.264221321.461280891.1606181879-1475349824.1606181879" target="_blank"><img src="./assets/dashboard/apps/appspotify.png" class="icon"/></a>
+    <a href="https://www.youtube.com/results?search_query=national+geographic+vr+360" target="_blank"><img src="./assets/dashboard/apps/appyoutube.png" class="icon"/></a>
+    <a href="https://www.hulu.com/" target="_blank"><img src="./assets/dashboard/apps/hulu.png" class="icon"/></a>
+    <a href="https://www.netflix.com/" target="_blank"><img src="./assets/dashboard/apps/netflix.png" class="icon"/></a>
+  </div>
+
+  <div>
+    <iframe style="position:fixed;right:0px;top:0px;" width="320" noresize="noresize" scrolling="no" height="300" frameborder="0" src="https://widgets.tc2000.com/WidgetServer.ashx?id=148449"></iframe>
+
+    <iframe style="position:fixed;left:0vw;bottom:0vw;padding:0px;margin:0px;" src="https://open.spotify.com/embed/playlist/5UDQprxc78RPukW1W8luHp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe style="position:fixed;right:0vw;bottom:0vw;width:25vw;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=emFrZXJ5dGNsYXJrZUBnbWFpbC5jb20&amp;src=ZGNpb2M2OTIxbHByOWNxdDlhZmZwcm4wZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23039BE5&amp;color=%237986CB&amp;color=%237986CB&amp;color=%237986CB" style="border-width:0" width="600;" height="400" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div style="position:fixed;left:20vw;bottom:2vw;width:55vw;height:10vh;">
+  <a class="weatherwidget-io" href="https://forecast7.com/en/35d09n106d61/albuquerque/?unit=us" data-label_1="ALBUQUERQUE" data-label_2="WEATHER" data-theme="dark" >ALBUQUERQUE WEATHER</a>
+</div>
+
+  <script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+
+</body>
