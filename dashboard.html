@@ -97,7 +97,7 @@ function hideImg(){
     <a href="https://github.com" target="_blank"><img src="./assets/dashboard/apps/appgithub.gif" class="icon"/></a>
     <a href="https://repl.it/repls" target="_blank"><img src="./assets/dashboard/apps/code.png" class="icon"/></a>
     <a href="https://drive.google.com/drive" target="_blank"><img src="./assets/dashboard/apps/appdrive.ico" class="icon"/></a>
-    <span onclick="if(document.getElementById('stocksContainer').style.display=='block'){document.getElementById('stocksContainer').style.display='none'}else{document.getElementById('stocksContainer').style.display='block';}" ondblclick="window.open('https://invest.ameritrade.com/','_blank');" ><img src="./assets/dashboard/apps/stocks.jpg" class="icon"/></span>
+    <span onclick="if(document.getElementById('stocksContainer').style.display=='block'){document.getElementById('stocksContainer').style.display='none'}else{document.getElementById('stocksContainer').style.display='block';}" ondblclick="if(document.getElementById('stocksChartContainer').style.display=='block'){document.getElementById('stocksChartContainer').style.display='none'}else{document.getElementById('stocksChartContainer').style.display='block';}" ><img src="./assets/dashboard/apps/stocks.jpg" class="icon"/></span>
     <span onclick="if(document.getElementById('calendarContainer').style.display=='block'){document.getElementById('calendarContainer').style.display='none'}else{document.getElementById('calendarContainer').style.display='block';}" ondblclick="window.open('https://calendar.google.com/calendar/u/0/r?pli=1','_blank');" ><img src="./assets/dashboard/apps/calendar.jpg" class="icon"/></span>
     <div id="emailContainer" style="display:none;margin-top:20px;margin-left:24vw;">
       <a href="https://mail.google.com/" target="_blank"><img src="./assets/dashboard/apps/gmail.png" class="icon"/></a>
@@ -107,8 +107,8 @@ function hideImg(){
   </div>
 
   <div>
-    <iframe id="stocksContainer" style="display:none;position:fixed;right:0vw;top:10vw;" width="320" noresize="noresize" scrolling="no" height="300" frameborder="0" src="https://widgets.tc2000.com/WidgetServer.ashx?id=213533"></iframe>
-
+    <iframe id="stocksContainer" style="display:none;position:fixed;right:0vw;top:10vw;"width="320" noresize="noresize" scrolling="no" height="300" frameborder="0" src="https://widgets.tc2000.com/WidgetServer.ashx?id=214300"></iframe>
+    <iframe  id="stocksChartContainer" style="display:none;" width="400" noresize="noresize" scrolling="no" height="300" frameborder="0" src="https://widgets.tc2000.com/WidgetServer.ashx?id=214298"></iframe>
     <iframe id="spotifyContainer" style="display:none;position:fixed;left:0vw;bottom:0vw;padding:0px;margin:0px;" src="https://open.spotify.com/embed/playlist/5UDQprxc78RPukW1W8luHp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <iframe id="calendarContainer"style="display:none;position:fixed;right:0vw;bottom:0vw;width:25vw;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=emFrZXJ5dGNsYXJrZUBnbWFpbC5jb20&amp;src=ZGNpb2M2OTIxbHByOWNxdDlhZmZwcm4wZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23039BE5&amp;color=%237986CB&amp;color=%237986CB&amp;color=%237986CB" style="border-width:0" width="600;" height="400" frameborder="0" scrolling="no"></iframe>
   </div>
