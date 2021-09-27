@@ -1,8 +1,57 @@
 var config=
 [
+  {
+    title:"Master's Thesis",
+    content:"NLP thesis focused on learning intermediate representations for question answering. Uses word vectors, text to text transformers, coreference resolution and other NLP techniques to generate inferred knowledge graphs from a passage of text.",
+    url:"https://zclarke.dev/Thesis/clarkeThesisFinal.pdf",
+    github:"https://github.com/zakerytclarke/Thesis",
+    pkg:"",
+    stats:"",
+    year:"2020",
+    tech:["python"],
+    tags:["Machine Learning","Natual Language Processing"],
+    images:["./assets/portfolio/thesis.png"]
+  },
+  {
+    title:"Apartment Rent Predictor",
+    content:"Createda model to predict rent prices and apartment occupancy from relevant features. Data will be used to competetively price apartment rent and predict occupancy for profit analysis. Resulted in a model with less than 5% error rate using ensemble machine learning methods.",
+    url:"https://zclarke.dev/Apartment_Rent_Analysis/",
+    github:"https://github.com/zakerytclarke/Apartment_Rent_Analysis",
+    pkg:"",
+    stats:"",
+    year:"2020",
+    tech:["node","html5","css3"],
+    tags:["Neural Network","Data Analytics","Machine Learning"],
+    images:["./assets/portfolio/apartment.png"]
+  },
+  {
+    title:"Computational Paper",
+    content:"Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and mathematical variable assigment and numerical computation.",
+    url:"https://zclarke.dev/computationalPaper/",
+    github:"https://github.com/zakerytclarke/computationalPaper",
+    pkg:"",
+    stats:"",
+    year:"2021",
+    tech:["js","html5","css3"],
+    tags:["Image recognition","Machine Learning","Numerical Computation"],
+    images:["./assets/portfolio/computationalPaper.gif"]
+  },
+  
+  {
+    title:"Weave Language",
+    content:" Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax",
+    url:"",
+    github:"https://github.com/zakerytclarke/weavelang",
+    pkg:"",
+    stats:"",
+    year:"2020",
+    tech:["haskell"],
+    tags:["Functional Programming","Compilers","Imperative Style"],
+    images:["./assets/portfolio/weave.png"]
+  },
  {
    title:"E-Center",
-   content:"E-Sports Statistics Platform focused on improving player performance through informed statistics. Video Recognition technology used to analyze performance.",
+   content:"E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.",
    url:"https://ecenter.tv/",
    github:"",
    pkg:"",
@@ -13,6 +62,18 @@ var config=
    tags:["Image Recognition","Data Scraping","API Development"],
    images:["./assets/portfolio/ecenterhome.png","./assets/portfolio/ecenterstats.png"]
  },
+ {
+  title:"Solomon.ai",
+  content:"Created tool to automatically clean and visualize data, and build machine learning models.",
+  url:"https://zclarke.dev/solomon/",
+  github:"https://github.com/zakerytclarke/solomon",
+  pkg:"",
+  stats:"",
+  year:"2020",
+  tech:["js","html5","css3"],
+  tags:["Machine Learning","Data Analytics","Neural Networks"],
+  images:["./assets/portfolio/solomon.png","./assets/portfolio/solomon.gif"]
+},
  {
    title:"Sara.ai",
    content:"",
