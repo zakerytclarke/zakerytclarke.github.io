@@ -13,33 +13,32 @@ var config=
     images:["./assets/portfolio/thesis.png"]
   },
   {
+    title:"Teapot AI- Customer Service Chatbot",
+    content:"Fine-tuned NLP model to lease apartments. Can provide information about apartments, neighborhoods in addition to collecting rental information and scheduling appointments.",
+    url:"https://fastapi-production-e7b7.up.railway.app/chat?realtor",
+    github:"",
+    pkg:"",
+    stats:"",
+    year:"2022",
+    tech:["python","html5","css3"],
+    tags:["Natural Language Processing","GPT-3","Machine Learning"],
+    images:["./assets/portfolio/teapot.gif"]
+  },
+  {
     title:"Apartment Rent Predictor",
-    content:"Createda model to predict rent prices and apartment occupancy from relevant features. Data will be used to competetively price apartment rent and predict occupancy for profit analysis. Resulted in a model with less than 5% error rate using ensemble machine learning methods.",
+    content:"Created a model to predict rent prices and apartment occupancy from relevant features. Data will be used to competetively price apartment rent and predict occupancy for profit analysis. Resulted in a model with less than 5% error rate using ensemble machine learning methods.",
     url:"https://zclarke.dev/Apartment_Rent_Analysis/",
     github:"https://github.com/zakerytclarke/Apartment_Rent_Analysis",
     pkg:"",
     stats:"",
     year:"2020",
-    tech:["node","html5","css3"],
+    tech:["python","node","html5"],
     tags:["Neural Network","Data Analytics","Machine Learning"],
     images:["./assets/portfolio/apartment.png"]
-  },
-  {
-    title:"Computational Paper",
-    content:"Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and mathematical variable assigment and numerical computation.",
-    url:"https://zclarke.dev/computationalPaper/",
-    github:"https://github.com/zakerytclarke/computationalPaper",
-    pkg:"",
-    stats:"",
-    year:"2021",
-    tech:["js","html5","css3"],
-    tags:["Image recognition","Machine Learning","Numerical Computation"],
-    images:["./assets/portfolio/computationalPaper.gif"]
-  },
-  
+  },  
   {
     title:"Weave Language",
-    content:" Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax",
+    content:"Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax",
     url:"",
     github:"https://github.com/zakerytclarke/weavelang",
     pkg:"",
@@ -62,7 +61,20 @@ var config=
    tags:["Image Recognition","Data Scraping","API Development"],
    images:["./assets/portfolio/ecenterhome.png","./assets/portfolio/ecenterstats.png"]
  },
- {
+{
+  title:"Sara.ai",
+  content:"Context aware chatbot trained to answer questions from Wikipedia articles",
+  url:"",
+  github:"",
+  pkg:"",
+  stats:"",
+  year:"2018",
+  tech:["node","html5"],
+  tags:["Machine Learning","Artificial Intelligence"],
+  images:["./assets/portfolio/sara.png","./assets/portfolio/saradialog.png"],
+  mobileImg:"./assets/portfolio/saramobile.png"
+},
+{
   title:"Solomon.ai",
   content:"Created tool to automatically clean and visualize data, and build machine learning models.",
   url:"https://zclarke.dev/solomon/",
@@ -74,19 +86,52 @@ var config=
   tags:["Machine Learning","Data Analytics","Neural Networks"],
   images:["./assets/portfolio/solomon.png","./assets/portfolio/solomon.gif"]
 },
+{
+  title:"NLP Chess",
+  content:"Language Models have been used for a variety of tasks- text generation, translation, etc. They have shown incredible strengths as few or zero shot learns. Let's take advantage of that to build a Chess Engine using GPT-3.",
+  url:"https://github.com/zakerytclarke/nlpchess",
+  github:"https://github.com/zakerytclarke/nlpchess",
+  pkg:"",
+  year:"2022",
+  tech:["python"],
+  tags:["Natural Language Processing","Transfer Learning"],
+  images:["./assets/portfolio/nlpchess.png"]
+},
+{
+  title:"Quantum Circuit Simulator.ai",
+  content:"NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates (Hadamard, CNot, etc) and is highly extensible. Can be utilized to prototype quantum algorithms before exporting to costly hardware.",
+  url:"",
+  github:"https://github.com/zakerytclarke/quantum-circuit-simulator",
+  pkg:"",
+  stats:"",
+  year:"2020",
+  tech:["js","html5","css3"],
+  tags:["Quantum Computing","Data Analytics","Statistics"],
+  images:["./assets/portfolio/quantum.png"]
+},
  {
-   title:"Sara.ai",
-   content:"",
-   url:"https://sara-ai.herokuapp.com/",
-   github:"",
-   pkg:"",
-   stats:"",
-   year:"2018",
-   tech:["node","html5","css3"],
-   tags:["Machine Learning","Artificial Intelligence"],
-   images:["./assets/portfolio/sara.png","./assets/portfolio/saradialog.png"],
-   mobileImg:"./assets/portfolio/saramobile.png"
- },
+  title:"Chatbot.js",
+  content:"Chatbot framework for construction of intelligent agents. Can be used to offload service requests with easy to use syntax.",
+  url:"https://zclarke.xyz/chatbot.js/",
+  github:"https://github.com/zakerytclarke/chatbot.js",
+  pkg:"https://github.com/zakerytclarke/chatbot.js",
+  year:"2017",
+  tech:["js","html5","css3"],
+  tags:["Artificial Intelligence","Embedded Applications"],
+  images:["./assets/portfolio/chatbot.png"]
+},
+{
+  title:"Computational Paper",
+  content:"Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and mathematical variable assigment and numerical computation.",
+  url:"https://zclarke.dev/computationalPaper/",
+  github:"https://github.com/zakerytclarke/computationalPaper",
+  pkg:"",
+  stats:"",
+  year:"2021",
+  tech:["js","html5","css3"],
+  tags:["Image recognition","Machine Learning","Numerical Computation"],
+  images:["./assets/portfolio/computationalPaper.gif"]
+},
  {
    title:"Codely",
    content:"Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.",
@@ -114,6 +159,19 @@ var config=
    mobileImg:"./assets/portfolio/feistymobile.png"
  },
  {
+  title:"Smart Mirror",
+  content:"",
+  url:"https://zclarke.xyz/smart-mirror/",
+  github:"https://github.com/zakerytclarke/smart-mirror",
+  pkg:"",
+  stats:"",
+  year:"2018",
+  tech:["js","html5","css3"],
+  tags:["API Integration","Minimal Design"],
+  images:["./assets/portfolio/smart-mirror.png"],
+  mobileImg:"./assets/portfolio/mirrormobile.png"
+},
+ {
  title:"Clarke Computing",
  content:"",
  url:"https://clarkecomputing.io",
@@ -126,43 +184,6 @@ var config=
  tags:["Brand Design","Website Design","Digital Marketing"],
  images:["./assets/portfolio/clarkecomputing.png"]
 },
- {
- title:"Quark Editor",
- content:"An online IDE that allows easy editing of git repositories stored on Github.",
- url:"https://zclarke.xyz/quark/",
- github:"https://github.com/zakerytclarke/quark",
- pkg:"",
- stats:"",
- year:"2017",
- tech:["js","html5","css3"],
- tags:["Syntax Highlighting","Github Integration","Media Integration"],
- images:["./assets/portfolio/quark.png"],
- mobileImg:"./assets/portfolio/quarkmobile.png"
-},
- {
-   title:"Chatbot.js",
-   content:"Chatbot framework for construction of intelligent agents. Can be used to offload service requests with easy to use syntax.",
-   url:"https://zclarke.xyz/chatbot.js/",
-   github:"https://github.com/zakerytclarke/chatbot.js",
-   pkg:"https://github.com/zakerytclarke/chatbot.js",
-   year:"2017",
-   tech:["js","html5","css3"],
-   tags:["Artificial Intelligence","Embedded Applications"],
-   images:["./assets/portfolio/chatbot.png"]
- },
- {
-   title:"Smart Mirror",
-   content:"",
-   url:"https://zclarke.xyz/smart-mirror/",
-   github:"https://github.com/zakerytclarke/smart-mirror",
-   pkg:"",
-   stats:"",
-   year:"2018",
-   tech:["js","html5","css3"],
-   tags:["API Integration","Minimal Design"],
-   images:["./assets/portfolio/smart-mirror.png"],
-   mobileImg:"./assets/portfolio/mirrormobile.png"
- },
 {
  title:"E-TransControl",
  content:"<b>Auto Website</b><br> Kit builder for after-market transmission controllers and various car modificationsa.",
@@ -189,31 +210,18 @@ var config=
  images:["./assets/portfolio/dingo.png","./assets/portfolio/dingodocs.png"]
 },
 {
- title:"Emma Buck Photography",
- content:"",
- url:"",
- github:"",
- pkg:"",
- stats:"",
- year:"2016",
- tech:["html5","css3","js"],
- tags:["Minimalist","Photography","Portfolio"],
- images:["./assets/portfolio/emmaxbuck.png"]
-},
-{
- title:"μ Markup",
- content:"A lightweight markup compiler to generate simple, stylish formatting. Support for annotations, formulaes, and tables",
- url:"",
- github:"https://github.com/zakerytclarke/mu",
- pkg:"",
- stats:"",
- tags:["Markup Compiler","Stylish Formatting"],
- year:"2018",
- tech:["node","css3","html5"],
- images:["./assets/portfolio/mu.png"],
- mobileImg:"./assets/portfolio/mumobile.png"
-
-},
+  title:"Quark Editor",
+  content:"An online IDE that allows easy editing of git repositories stored on Github.",
+  url:"https://zclarke.xyz/quark/",
+  github:"https://github.com/zakerytclarke/quark",
+  pkg:"",
+  stats:"",
+  year:"2017",
+  tech:["js","html5","css3"],
+  tags:["Syntax Highlighting","Github Integration","Media Integration"],
+  images:["./assets/portfolio/quark.png"],
+  mobileImg:"./assets/portfolio/quarkmobile.png"
+ },
 {
  title:"Low-Level-Basic",
  url:"",
@@ -225,17 +233,7 @@ var config=
  tags:["Low Level variant of Basic","Assembly like Syntax"],
  images:["./assets/portfolio/llb.png"]
 },
-{
- title:"New Mexico Backpacking",
- url:"",
- github:"",
- pkg:"",
- stats:"",
- year:"2016",
- tech:["wordpress","html5","css3"],
- tags:["Website for New Mexico backpacking Tours"],
- images:["./assets/portfolio/nmbackpack.png"]
-},
+
 {
  title:"Azulejos",
  year:"2018",

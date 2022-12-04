@@ -253,7 +253,7 @@ function renderItem(json){
 }
 
 
-globalOut+="footer";
+// globalOut+="footer";
 
 fs.writeFileSync("./portfolio.html",globalOut);
 
