@@ -142,7 +142,7 @@ for(var i=0;i<config.length;i++){
  *
  */
 function renderItem(json){
-  var out="<div class='portfolio'>";
+  var out="<div id='"+json.title+"' class='portfolio'>";
     out+="<div class='infoBox'>"
       out+="<h1>"+json.title+"</h1>";
 

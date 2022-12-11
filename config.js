@@ -48,6 +48,18 @@ var config=
     tags:["Functional Programming","Compilers","Imperative Style"],
     images:["./assets/portfolio/weave.png"]
   },
+  {
+    title:"Sports Analysis Tracker",
+    content:"Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotate footage that can track objects and their velocities along with metadata. THe library can even account for camera tilt/pan and can be applied to a variety of sports analysis.",
+    url:"",
+    github:"https://github.com/zakerytclarke/sports_analysis",
+    pkg:"",
+    stats:"",
+    year:"2022",
+    tech:["python"],
+    tags:["Image Recognition","Physics Simulation"],
+    images:["./assets/portfolio/sports_analysis.gif"]
+  },
  {
    title:"E-Center",
    content:"E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.",
