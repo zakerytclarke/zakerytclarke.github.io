@@ -50,7 +50,7 @@ var config=
   },
   {
     title:"Sports Analysis Tracker",
-    content:"Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotate footage that can track objects and their velocities along with metadata. THe library can even account for camera tilt/pan and can be applied to a variety of sports analysis.",
+    content:"Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities along with metadata accounting for camera tilt/pan.",
     url:"",
     github:"https://github.com/zakerytclarke/sports_analysis",
     pkg:"",
