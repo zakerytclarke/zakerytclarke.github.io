@@ -233,7 +233,12 @@ function renderItem(json){
           }
         }
         out+='<span onclick="showImg(`'+json.images[i]+'`)">';
-        out+="<img src='"+json.images[i]+"'/>";
+        if(json.images[i].indexOf(".mp4")!=-1){
+            out += `<video width="80%" controls><source src="`+json.images[i]+`" type="video/mp4"></video>`;
+        }else{
+          out+="<img src='"+json.images[i]+"'/>";
+        
+        }
         out+="</span>";
         out+="</div>";
     }

@@ -13,6 +13,18 @@ var config=
     images:["./assets/portfolio/thesis.png"]
   },
   {
+    title:"HealthRhythms x MLOps Conference",
+    content:"Conference presentation for MLOps Community about our work to build clinically validated models to identify and treat suicidal ideation in healthcare settings.",
+    url:"./assets/portfolio/HealthRhythmsxMLOps.pdf",
+    github:"",
+    pkg:"",
+    stats:"",
+    year:"2023",
+    tech:["python"],
+    tags:["Machine Learning","Healthcare"],
+    images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
+  },
+  {
     title:"Teapot AI- Customer Service Chatbot",
     content:"Fine-tuned NLP model to lease apartments. Can provide information about apartments, neighborhoods in addition to collecting rental information and scheduling appointments.",
     url:"https://fastapi-production-e7b7.up.railway.app/chat?realtor",
