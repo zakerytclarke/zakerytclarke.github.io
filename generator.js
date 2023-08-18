@@ -232,10 +232,13 @@ function renderItem(json){
             out+="<div class='image noMobileFlag'>";
           }
         }
-        out+='<span onclick="showImg(`'+json.images[i]+'`)">';
         if(json.images[i].indexOf(".mp4")!=-1){
+          out+='<span>';
+        
             out += `<video width="80%" controls><source src="`+json.images[i]+`" type="video/mp4"></video>`;
         }else{
+          out+='<span onclick="showImg(`'+json.images[i]+'`)">';
+        
           out+="<img src='"+json.images[i]+"'/>";
         
         }
