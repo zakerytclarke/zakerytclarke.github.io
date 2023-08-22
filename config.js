@@ -31,7 +31,7 @@ var config=
     github:"",
     pkg:"",
     stats:"",
-    year:"2020",
+    year:"2023",
     tech:["python"],
     tags:["Machine Learning","Healthcare", "Patent"],
     images:["./assets/portfolio/Patent.png"]
