@@ -25,6 +25,18 @@ var config=
     images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
   },
   {
+    title:"Behavioral Vital Sign Identification in SMI Patients- Patent",
+    content:"Built a system to identify imporant passively sensed features for remote patient monitoring, including insights & interventions. Filed patent with core intellectual property.",
+    url:"./assets/portfolio/PatentVitalSigns.pdf",
+    github:"",
+    pkg:"",
+    stats:"",
+    year:"2020",
+    tech:["python"],
+    tags:["Machine Learning","Healthcare", "Patent"],
+    images:["./assets/portfolio/Patent.png"]
+  },
+  {
     title:"Teapot AI- Customer Service Chatbot",
     content:"Fine-tuned NLP model to lease apartments. Can provide information about apartments, neighborhoods in addition to collecting rental information and scheduling appointments.",
     url:"https://fastapi-production-e7b7.up.railway.app/chat?realtor",
