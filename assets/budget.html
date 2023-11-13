@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .counter {
+            font-size: 4em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .arrows {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="counter">
+            <h1>$<span id="count">100</span></h1>
+            <div class="arrows">
+                <button id="increase">+</button>
+                <button id="decrease">-</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const countDisplay = document.getElementById('count');
+        const increaseButton = document.getElementById('increase');
+        const decreaseButton = document.getElementById('decrease');
+
+        let additional_diff = 0;
+        let incrementInterval;
+        let decrementInterval;
+        let count = 100;
+
+        function updateCounter(value) {
+            countDisplay.textContent = Math.floor(value + additional_diff);
+            localStorage.setItem('counterValue', countDisplay.textContent); // Save to localStorage
+        }
+
+        function getLast30DaysData() {
+            const last30DaysData = [];
+            for (let i = 29; i >= 0; i--) {
+                const date = new Date();
+                date.setDate(date.getDate() - i);
+                const formattedDate = date.toISOString().split('T')[0];
+                const data = localStorage.getItem(formattedDate);
+                last30DaysData.push(data ? parseInt(data) : 0);
+            }
+            return last30DaysData;
+        }
+
+        const savedValue = localStorage.getItem('counterValue');
+        if (savedValue !== null) {
+            countDisplay.textContent = savedValue;
+        } else {
+            countDisplay.textContent = '100'; // Set default value to $100
+        }
+
+        const dataForLast30Days = getLast30DaysData();
+        const sumOfNegativeLast30Days = dataForLast30Days.reduce((acc, val) => val < 0 ? acc + val : acc, 0);
+        additional_diff = sumOfNegativeLast30Days / 30;
+
+        increaseButton.addEventListener('mousedown', () => {
+            count++;
+            updateCounter(count);
+            incrementInterval = setInterval(() => {
+                count++;
+                updateCounter(count);
+            }, 200);
+        });
+
+        decreaseButton.addEventListener('mousedown', () => {
+            count--;
+            updateCounter(count);
+            decrementInterval = setInterval(() => {
+                count--;
+                updateCounter(count);
+            }, 200);
+        });
+
+        document.addEventListener('mouseup', () => {
+            clearInterval(incrementInterval);
+            clearInterval(decrementInterval);
+        });
+    </script>
+</body>
+</html>
