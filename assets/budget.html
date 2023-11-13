@@ -19,7 +19,7 @@
         }
 
         .counter {
-            font-size: 4em;
+            font-size: 4em; /* Increased text size */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -43,6 +43,12 @@
             display: flex;
             flex-direction: column;
         }
+
+        #to100,
+        #by100 {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -54,67 +60,31 @@
                 <button id="decrease">-</button>
             </div>
         </div>
+        <button id="to100">$100</button>
+        <button id="by100">$100+</button>
     </div>
     <script>
         const countDisplay = document.getElementById('count');
-        const increaseButton = document.getElementById('increase');
-        const decreaseButton = document.getElementById('decrease');
+        let count = parseInt(countDisplay.textContent) || 0;
 
-        let additional_diff = 0;
-        let incrementInterval;
-        let decrementInterval;
-        let count = 100;
+        const updateCounter = (value) => {
+            count = value;
+            countDisplay.textContent = value;
+            const today = new Date().toISOString().split('T')[0];
+            localStorage.setItem("counter", value);
+        };
 
-        function updateCounter(value) {
-            countDisplay.textContent = Math.floor(value + additional_diff);
-            localStorage.setItem('counterValue', countDisplay.textContent); // Save to localStorage
-        }
+        const retrieveStoredCount = () => {
+            const today = new Date().toISOString().split('T')[0];
+            updateCounter(localStorage.getItem("counter") || 0);
+        };
 
-        function getLast30DaysData() {
-            const last30DaysData = [];
-            for (let i = 29; i >= 0; i--) {
-                const date = new Date();
-                date.setDate(date.getDate() - i);
-                const formattedDate = date.toISOString().split('T')[0];
-                const data = localStorage.getItem(formattedDate);
-                last30DaysData.push(data ? parseInt(data) : 0);
-            }
-            return last30DaysData;
-        }
+        retrieveStoredCount();
 
-        const savedValue = localStorage.getItem('counterValue');
-        if (savedValue !== null) {
-            countDisplay.textContent = savedValue;
-        } else {
-            countDisplay.textContent = '100'; // Set default value to $100
-        }
-
-        const dataForLast30Days = getLast30DaysData();
-        const sumOfNegativeLast30Days = dataForLast30Days.reduce((acc, val) => val < 0 ? acc + val : acc, 0);
-        additional_diff = sumOfNegativeLast30Days / 30;
-
-        increaseButton.addEventListener('mousedown', () => {
-            count++;
-            updateCounter(count);
-            incrementInterval = setInterval(() => {
-                count++;
-                updateCounter(count);
-            }, 200);
-        });
-
-        decreaseButton.addEventListener('mousedown', () => {
-            count--;
-            updateCounter(count);
-            decrementInterval = setInterval(() => {
-                count--;
-                updateCounter(count);
-            }, 200);
-        });
-
-        document.addEventListener('mouseup', () => {
-            clearInterval(incrementInterval);
-            clearInterval(decrementInterval);
-        });
+        document.getElementById('increase').addEventListener('click', () => updateCounter(count + 1));
+        document.getElementById('decrease').addEventListener('click', () => updateCounter(count - 1));
+        document.getElementById('to100').addEventListener('click', () => updateCounter(100));
+        document.getElementById('by100').addEventListener('click', () => updateCounter(count + 100));
     </script>
 </body>
 </html>
