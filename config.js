@@ -26,12 +26,12 @@ var config=
   },
   {
     title:"Teapot AI- Local LLM RAG Agents",
-    content:"Fine-tuned LLM agent that can perform RAG based chat completely in browser.",
+    content:"Fine-tuned LLM agent that can perform RAG based chat completely in browser. Runs completely in a user's browser or chrome extension and can use tools with a ~1 billion parameter model.",
     url:"https://teapotai.com/blog",
     github:"",
     pkg:"",
     stats:"",
-    year:"2022",
+    year:"2024",
     tech:["python","js"],
     tags:["Large Language Models","Retrieval Augmented Generation"],
     images:["./assets/portfolio/teapot_demo.gif"]
