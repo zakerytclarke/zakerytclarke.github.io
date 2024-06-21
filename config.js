@@ -25,7 +25,7 @@ var config=
     images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
   },
   {
-    title:"Teapot AI- Local LLM RAG Agents",
+    title:"Teapot AI- Local LLM Agent",
     content:"Fine-tuned LLM agent that can perform RAG based chat completely in browser. Runs completely in a user's browser or chrome extension and can use tools with a ~1 billion parameter model.",
     url:"https://teapotai.com/blog",
     github:"",
