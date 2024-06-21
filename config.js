@@ -25,6 +25,18 @@ var config=
     images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
   },
   {
+    title:"Teapot AI- Local LLM RAG Agents",
+    content:"Fine-tuned LLM agent that can perform RAG based chat completely in browser.",
+    url:"https://teapotai.com/blog",
+    github:"",
+    pkg:"",
+    stats:"",
+    year:"2022",
+    tech:["python","js"],
+    tags:["Large Language Models","Retrieval Augmented Generation"],
+    images:["./assets/portfolio/teapot_demo.gif"]
+  },
+  {
     title:"Behavioral Vital Sign Identification in SMI Patients- Patent",
     content:"Built a system to identify imporant passively sensed features for remote patient monitoring, including insights & interventions. Filed patent with core intellectual property.",
     url:"./assets/portfolio/PatentVitalSigns.pdf",
@@ -37,7 +49,7 @@ var config=
     images:["./assets/portfolio/Patent.png"]
   },
   {
-    title:"Teapot AI- Customer Service Chatbot",
+    title:"LLM Customer Service Chatbot",
     content:"Fine-tuned NLP model to lease apartments. Can provide information about apartments, neighborhoods in addition to collecting rental information and scheduling appointments.",
     url:"https://fastapi-production-e7b7.up.railway.app/chat?realtor",
     github:"",
