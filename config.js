@@ -49,16 +49,16 @@ var config=
     images:["./assets/portfolio/Patent.png"]
   },
   {
-    title:"LLM Customer Service Chatbot",
-    content:"Fine-tuned NLP model to lease apartments. Can provide information about apartments, neighborhoods in addition to collecting rental information and scheduling appointments.",
-    url:"https://fastapi-production-e7b7.up.railway.app/chat?realtor",
-    github:"",
+    title:"NYC AI Traffic Camera Analysis",
+    content:"Leveraging object recognition models to analyze traffic patterns from NYC's free traffic camera API.",
+    url:"",
+    github:"https://github.com/zakerytclarke/nyc_ai_traffic_camera_analysis",
     pkg:"",
     stats:"",
-    year:"2022",
-    tech:["python","html5","css3"],
-    tags:["Natural Language Processing","GPT-3","Machine Learning"],
-    images:["./assets/portfolio/teapot.gif"]
+    year:"2024",
+    tech:["python"],
+    tags:["Object Recognition","GPU"],
+    images:["https://raw.githubusercontent.com/zakerytclarke/nyc_ai_traffic_camera_analysis/refs/heads/main/bridge.png"]
   },
   {
     title:"Apartment Rent Predictor",
