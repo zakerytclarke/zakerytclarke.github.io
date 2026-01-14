@@ -1,6 +1,18 @@
 var config=
 [
   {
+    title:"Teapot LLM",
+    content:"Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.",
+    url:"https://teapotai.com",
+    github:"https://huggingface.co/teapotai/teapotllm",
+    pkg:"",
+    stats:"",
+    year:"2025",
+    tech:["python","js"],
+    tags:["Large Language Models","Retrieval Augmented Generation"],
+    images:["./assets/teapot_graph.png","./assets/teapot_downloads.png"]
+  },
+  {
     title:"Master's Thesis",
     content:"NLP thesis focused on learning intermediate representations for question answering. Uses word vectors, text to text transformers, coreference resolution and other NLP techniques to generate inferred knowledge graphs from a passage of text.",
     url:"https://zclarke.dev/Thesis/clarkeThesisFinal.pdf",
@@ -23,18 +35,6 @@ var config=
     tech:["python"],
     tags:["Machine Learning","Healthcare"],
     images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
-  },
-  {
-    title:"Teapot AI- Local LLM Agent",
-    content:"Fine-tuned LLM agent that can perform RAG based chat completely in browser. Runs completely in a user's browser or chrome extension and can use tools with a ~1 billion parameter model.",
-    url:"https://teapotai.com/blog",
-    github:"",
-    pkg:"",
-    stats:"",
-    year:"2024",
-    tech:["python","js"],
-    tags:["Large Language Models","Retrieval Augmented Generation"],
-    images:["./assets/portfolio/teapot_demo.gif"]
   },
   {
     title:"Behavioral Vital Sign Identification in SMI Patients- Patent",
