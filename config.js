@@ -1,393 +1,331 @@
-var config=
-[
-  {
-    title:"Teapot LLM",
-    content:"Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.",
-    url:"https://teapotai.com",
-    github:"https://huggingface.co/teapotai/teapotllm",
-    pkg:"",
-    stats:"",
-    year:"2025",
-    tech:["python","js"],
-    tags:["Large Language Models","Retrieval Augmented Generation"],
-    images:["./assets/teapot_graph.png","./assets/teapot_downloads.png"]
-  },
-  {
-    title:"Master's Thesis",
-    content:"NLP thesis focused on learning intermediate representations for question answering. Uses word vectors, text to text transformers, coreference resolution and other NLP techniques to generate inferred knowledge graphs from a passage of text.",
-    url:"https://zclarke.dev/Thesis/clarkeThesisFinal.pdf",
-    github:"https://github.com/zakerytclarke/Thesis",
-    pkg:"",
-    stats:"",
-    year:"2020",
-    tech:["python"],
-    tags:["Machine Learning","Natual Language Processing"],
-    images:["./assets/portfolio/thesis.png"]
-  },
-  {
-    title:"HealthRhythms x MLOps Conference",
-    content:"Conference presentation for MLOps Community about our work to build clinically validated models to identify and treat suicidal ideation in healthcare settings.",
-    url:"./assets/portfolio/HealthRhythmsxMLOps.pdf",
-    github:"",
-    pkg:"",
-    stats:"",
-    year:"2023",
-    tech:["python"],
-    tags:["Machine Learning","Healthcare"],
-    images:["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
-  },
-  {
-    title:"Behavioral Vital Sign Identification in SMI Patients- Patent",
-    content:"Built a system to identify imporant passively sensed features for remote patient monitoring, including insights & interventions. Filed patent with core intellectual property.",
-    url:"./assets/portfolio/PatentVitalSigns.pdf",
-    github:"",
-    pkg:"",
-    stats:"",
-    year:"2023",
-    tech:["python"],
-    tags:["Machine Learning","Healthcare", "Patent"],
-    images:["./assets/portfolio/Patent.png"]
-  },
-  {
-    title:"NYC AI Traffic Camera Analysis",
-    content:"Leveraging object recognition models to analyze traffic patterns from NYC's free traffic camera API.",
-    url:"",
-    github:"https://github.com/zakerytclarke/nyc_ai_traffic_camera_analysis",
-    pkg:"",
-    stats:"",
-    year:"2024",
-    tech:["python"],
-    tags:["Object Recognition","GPU"],
-    images:["https://raw.githubusercontent.com/zakerytclarke/nyc_ai_traffic_camera_analysis/refs/heads/main/bridge.png"]
-  },
-  {
-    title:"Apartment Rent Predictor",
-    content:"Created a model to predict rent prices and apartment occupancy from relevant features. Data will be used to competetively price apartment rent and predict occupancy for profit analysis. Resulted in a model with less than 5% error rate using ensemble machine learning methods.",
-    url:"https://zclarke.dev/Apartment_Rent_Analysis/",
-    github:"https://github.com/zakerytclarke/Apartment_Rent_Analysis",
-    pkg:"",
-    stats:"",
-    year:"2020",
-    tech:["python","node","html5"],
-    tags:["Neural Network","Data Analytics","Machine Learning"],
-    images:["./assets/portfolio/apartment.png"]
-  },  
-  {
-    title:"Weave Language",
-    content:"Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax",
-    url:"",
-    github:"https://github.com/zakerytclarke/weavelang",
-    pkg:"",
-    stats:"",
-    year:"2020",
-    tech:["haskell"],
-    tags:["Functional Programming","Compilers","Imperative Style"],
-    images:["./assets/portfolio/weave.png"]
-  },
-  {
-    title:"Sports Analysis Tracker",
-    content:"Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities along with metadata accounting for camera tilt/pan.",
-    url:"",
-    github:"https://github.com/zakerytclarke/sports_analysis",
-    pkg:"",
-    stats:"",
-    year:"2022",
-    tech:["python"],
-    tags:["Image Recognition","Physics Simulation"],
-    images:["./assets/portfolio/sports_analysis.gif"]
-  },
- {
-   title:"E-Center",
-   content:"E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.",
-   url:"https://ecenter.tv/",
-   github:"",
-   pkg:"",
-   stats:"",
-   position:"Co-Founder",
-   year:"2019",
-   tech:["node","html5","css3"],
-   tags:["Image Recognition","Data Scraping","API Development"],
-   images:["./assets/portfolio/ecenterhome.png","./assets/portfolio/ecenterstats.png"]
- },
-{
-  title:"Sara.ai",
-  content:"Context aware chatbot trained to answer questions from Wikipedia articles",
-  url:"",
-  github:"",
-  pkg:"",
-  stats:"",
-  year:"2018",
-  tech:["node","html5"],
-  tags:["Machine Learning","Artificial Intelligence"],
-  images:["./assets/portfolio/sara.png","./assets/portfolio/saradialog.png"],
-  mobileImg:"./assets/portfolio/saramobile.png"
-},
-{
-  title:"Solomon.ai",
-  content:"Created tool to automatically clean and visualize data, and build machine learning models.",
-  url:"https://zclarke.dev/solomon/",
-  github:"https://github.com/zakerytclarke/solomon",
-  pkg:"",
-  stats:"",
-  year:"2020",
-  tech:["js","html5","css3"],
-  tags:["Machine Learning","Data Analytics","Neural Networks"],
-  images:["./assets/portfolio/solomon.png","./assets/portfolio/solomon.gif"]
-},
-{
-  title:"NLP Chess",
-  content:"Language Models have been used for a variety of tasks- text generation, translation, etc. They have shown incredible strengths as few or zero shot learns. Let's take advantage of that to build a Chess Engine using GPT-3.",
-  url:"https://github.com/zakerytclarke/nlpchess",
-  github:"https://github.com/zakerytclarke/nlpchess",
-  pkg:"",
-  year:"2022",
-  tech:["python"],
-  tags:["Natural Language Processing","Transfer Learning"],
-  images:["./assets/portfolio/nlpchess.png"]
-},
-{
-  title:"Quantum Circuit Simulator.ai",
-  content:"NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates (Hadamard, CNot, etc) and is highly extensible. Can be utilized to prototype quantum algorithms before exporting to costly hardware.",
-  url:"",
-  github:"https://github.com/zakerytclarke/quantum-circuit-simulator",
-  pkg:"",
-  stats:"",
-  year:"2020",
-  tech:["js","html5","css3"],
-  tags:["Quantum Computing","Data Analytics","Statistics"],
-  images:["./assets/portfolio/quantum.png"]
-},
- {
-  title:"Chatbot.js",
-  content:"Chatbot framework for construction of intelligent agents. Can be used to offload service requests with easy to use syntax.",
-  url:"https://zclarke.xyz/chatbot.js/",
-  github:"https://github.com/zakerytclarke/chatbot.js",
-  pkg:"https://github.com/zakerytclarke/chatbot.js",
-  year:"2017",
-  tech:["js","html5","css3"],
-  tags:["Artificial Intelligence","Embedded Applications"],
-  images:["./assets/portfolio/chatbot.png"]
-},
-{
-  title:"Computational Paper",
-  content:"Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and mathematical variable assigment and numerical computation.",
-  url:"https://zclarke.dev/computationalPaper/",
-  github:"https://github.com/zakerytclarke/computationalPaper",
-  pkg:"",
-  stats:"",
-  year:"2021",
-  tech:["js","html5","css3"],
-  tags:["Image recognition","Machine Learning","Numerical Computation"],
-  images:["./assets/portfolio/computationalPaper.gif"]
-},
- {
-   title:"Codely",
-   content:"Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.",
-   url:"http://codely-dev.herokuapp.com",
-   github:"https://github.com/zakerytclarke/codely",
-   pkg:"",
-   stats:"",
-   year:"2019",
-   tech:["js","html5","css3","node"],
-   tags:["Web IDE",""],
-   images:["./assets/portfolio/codely.png"],
-   mobileImg:"./assets/portfolio/codelymobile.png"
- },
- {
-   title:"Feisty",
-   content:"Smart chart rendering for large sets of data. Preserves maxes, mins and other general trends on zoom.",
-   url:"https://zclarke.xyz/feisty/",
-   github:"https://github.com/zakerytclarke/feisty",
-   pkg:"",
-   stats:"",
-   year:"2019",
-   tech:["js","html5","css3"],
-   tags:["Charting","Statistical Methods"],
-   images:["./assets/portfolio/feisty.png"],
-   mobileImg:"./assets/portfolio/feistymobile.png"
- },
- {
-  title:"Smart Mirror",
-  content:"",
-  url:"https://zclarke.xyz/smart-mirror/",
-  github:"https://github.com/zakerytclarke/smart-mirror",
-  pkg:"",
-  stats:"",
-  year:"2018",
-  tech:["js","html5","css3"],
-  tags:["API Integration","Minimal Design"],
-  images:["./assets/portfolio/smart-mirror.png"],
-  mobileImg:"./assets/portfolio/mirrormobile.png"
-},
- {
- title:"Clarke Computing",
- content:"",
- url:"https://clarkecomputing.io",
- github:"",
- pkg:"",
- stats:"",
- position:"Freelance Developer",
- year:"2016",
- tech:["html5","css3","js"],
- tags:["Brand Design","Website Design","Digital Marketing"],
- images:["./assets/portfolio/clarkecomputing.png"]
-},
-{
- title:"E-TransControl",
- content:"<b>Auto Website</b><br> Kit builder for after-market transmission controllers and various car modificationsa.",
- url:"",
- github:"",
- pkg:"",
- stats:"",
- year:"2017",
- tech:["wordpress","html5","css3"],
- tags:["Microcontroller","Hardware Programming"],
- images:["./assets/portfolio/etranscontrol.png","./assets/portfolio/etranscontrolkitbuilder.png"]
-},
-{
- title:"Dingo.js Framework",
- content:"",
- url:"",
- github:"https://github.com/zakerytclarke/dingojs",
- pkg:"",
- stats:"",
- year:"2017",
- tech:["js","css3","html5"],
- tags:["Image Recognition","Data Scraping","API Development"],
-
- images:["./assets/portfolio/dingo.png","./assets/portfolio/dingodocs.png"]
-},
-{
-  title:"Quark Editor",
-  content:"An online IDE that allows easy editing of git repositories stored on Github.",
-  url:"https://zclarke.xyz/quark/",
-  github:"https://github.com/zakerytclarke/quark",
-  pkg:"",
-  stats:"",
-  year:"2017",
-  tech:["js","html5","css3"],
-  tags:["Syntax Highlighting","Github Integration","Media Integration"],
-  images:["./assets/portfolio/quark.png"],
-  mobileImg:"./assets/portfolio/quarkmobile.png"
- },
-{
- title:"Low-Level-Basic",
- url:"",
- github:"https://github.com/zakerytclarke/low-level-basic",
- pkg:"",
- stats:"",
- year:"2017",
- tech:["c"],
- tags:["Low Level variant of Basic","Assembly like Syntax"],
- images:["./assets/portfolio/llb.png"]
-},
-
-{
- title:"Azulejos",
- year:"2018",
- tech:["html5","css3","js"],
- tags:["Tile Based Board Game","Animations and Effects"],
- url:"https://zclarke.xyz/azulejos/",
- github:"https://github.com/zakerytclarke/azulejos",
-
- images:["./assets/portfolio/azulejos.png"]
-},
-{
- title:"Stack Calc",
- year:"2018",
- tech:["html5","css3","js"],
- tags:["Stack Based Calculator","General Calculations","Programmable Functions"],
- url:"https://zclarke.xyz/stackcalc/",
- github:"https://github.com/zakerytclarke/stackcalc",
- pkg:"",
- stats:"",
- images:["./assets/portfolio/stackcalc.png"]
-},
-{
- title:"Genetic.js",
- content:"Genetic algorithm library for native JS. Easily abstract complex genetic algorithms into simple wrappers for machine learning and AI projects.",
- url:"https://codepen.io/zakerytclarke/pen/EzydYv",
- github:"https://github.com/zakerytclarke/geneticjs",
- year:"2019",
- tech:["html5","css3","js"],
- tags:["Genetic Algorithms","Machine Learning"],
- pkg:"",
- stats:"",
- images:["./assets/portfolio/geneticjs.png"]
-},
-{
- title:"Escher",
- content:"A mind-bending game built around a physics engine resembling the famous M.C. Escher's artwork.",
- url:"",
- year:"2017",
- tech:["html5","css3","js"],
- tags:["Unique Gameplay","Custom Physics Engine"],
- github:"",
- pkg:"",
- stats:"",
- images:["./assets/portfolio/escher.png"]
-},
-];
-
-var resume={
-  work:[
+var config =
+  [
     {
-      title:"Lead Developer",
-      company:"E-Center",
-      year:"2019-Current",
-      description:"Sole Developer of E-Sports Statistics Web App<br> Image Recognition \n",
-      tech:["node","html5","css3","js"]
+      title: "Teapot LLM",
+      content: "Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.",
+      url: "https://teapotai.com",
+      github: "https://huggingface.co/teapotai/teapotllm",
+      pkg: "",
+      stats: "",
+      year: "2025",
+      tech: ["python", "js"],
+      tags: ["Large Language Models", "Retrieval Augmented Generation"],
+      images: ["./assets/teapot_graph.png", "./assets/teapot_downloads.png"]
     },
     {
-      title:"Freelance Web Developer",
-      company:"Clarke Computing",
-      year:"2016-Current",
-      description:"Developed variety of websites for many clients\n",
-      tech:["html5","css3","js","wordpress"]
+      title: "Master's Thesis",
+      content: "NLP thesis focused on learning intermediate representations for question answering. Uses word vectors, text to text transformers, coreference resolution and other NLP techniques to generate inferred knowledge graphs from a passage of text.",
+      url: "https://zclarke.dev/Thesis/clarkeThesisFinal.pdf",
+      github: "https://github.com/zakerytclarke/Thesis",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["python"],
+      tags: ["Machine Learning", "Natual Language Processing"],
+      images: ["./assets/portfolio/thesis.png"]
     },
     {
-      title:"Software Developer",
-      company:"E-TransControl",
-      year:"2016-2019",
-      description:"Web Development<br> Embedded Processor Development\n",
-      tech:["c","html5","css3","js","wordpress"]
+      title: "HealthRhythms x MLOps Conference",
+      content: "Conference presentation for MLOps Community about our work to build clinically validated models to identify and treat suicidal ideation in healthcare settings.",
+      url: "./assets/portfolio/HealthRhythmsxMLOps.pdf",
+      github: "",
+      pkg: "",
+      stats: "",
+      year: "2023",
+      tech: ["python"],
+      tags: ["Machine Learning", "Healthcare"],
+      images: ["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
+    },
+    {
+      title: "Behavioral Vital Sign Identification in SMI Patients- Patent",
+      content: "Built a system to identify imporant passively sensed features for remote patient monitoring, including insights & interventions. Filed patent with core intellectual property.",
+      url: "",
+      github: "",
+      pkg: "",
+      stats: "",
+      year: "2023",
+      tech: ["python"],
+      tags: ["Machine Learning", "Healthcare", "Patent"],
+      images: ["./assets/portfolio/Patent.png"]
+    },
+    {
+      title: "NYC AI Traffic Camera Analysis",
+      content: "Leveraging object recognition models to analyze traffic patterns from NYC's free traffic camera API.",
+      url: "",
+      github: "https://github.com/zakerytclarke/nyc_ai_traffic_camera_analysis",
+      pkg: "",
+      stats: "",
+      year: "2024",
+      tech: ["python"],
+      tags: ["Object Recognition", "GPU"],
+      images: ["https://raw.githubusercontent.com/zakerytclarke/nyc_ai_traffic_camera_analysis/refs/heads/main/bridge.png"]
+    },
+    {
+      title: "Weave Language",
+      content: "Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax",
+      url: "",
+      github: "https://github.com/zakerytclarke/weavelang",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["haskell"],
+      tags: ["Functional Programming", "Compilers", "Imperative Style"],
+      images: ["./assets/portfolio/weave.png"]
+    },
+    {
+      title: "Sports Analysis Tracker",
+      content: "Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities along with metadata accounting for camera tilt/pan.",
+      url: "",
+      github: "https://github.com/zakerytclarke/sports_analysis",
+      pkg: "",
+      stats: "",
+      year: "2022",
+      tech: ["python"],
+      tags: ["Image Recognition", "Physics Simulation"],
+      images: ["./assets/portfolio/sports_analysis.gif"]
+    },
+    {
+      title: "E-Center",
+      content: "E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.",
+      url: "https://ecenter.tv/",
+      github: "",
+      pkg: "",
+      stats: "",
+      position: "Co-Founder",
+      year: "2019",
+      tech: ["node", "html5", "css3"],
+      tags: ["Image Recognition", "Data Scraping", "API Development"],
+      images: ["./assets/portfolio/ecenterhome.png", "./assets/portfolio/ecenterstats.png"]
+    },
+    {
+      title: "Solomon.ai",
+      content: "Created tool to automatically clean and visualize data, and build machine learning models.",
+      url: "https://zclarke.dev/solomon/",
+      github: "https://github.com/zakerytclarke/solomon",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["js", "html5", "css3"],
+      tags: ["Machine Learning", "Data Analytics", "Neural Networks"],
+      images: ["./assets/portfolio/solomon.png", "./assets/portfolio/solomon.gif"]
+    },
+    {
+      title: "NLP Chess",
+      content: "Language Models have been used for a variety of tasks- text generation, translation, etc. They have shown incredible strengths as few or zero shot learns. Let's take advantage of that to build a Chess Engine using GPT-3.",
+      url: "https://github.com/zakerytclarke/nlpchess",
+      github: "https://github.com/zakerytclarke/nlpchess",
+      pkg: "",
+      year: "2022",
+      tech: ["python"],
+      tags: ["Natural Language Processing", "Transfer Learning"],
+      images: ["./assets/portfolio/nlpchess.png"]
+    },
+    {
+      title: "Quantum Circuit Simulator",
+      content: "NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates (Hadamard, CNot, etc) and is highly extensible. Can be utilized to prototype quantum algorithms before exporting to costly hardware.",
+      url: "",
+      github: "https://github.com/zakerytclarke/quantum-circuit-simulator",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["js", "html5", "css3"],
+      tags: ["Quantum Computing", "Data Analytics", "Statistics"],
+      images: ["./assets/portfolio/quantum.png"]
+    },
+    {
+      title: "Computational Paper",
+      content: "Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and mathematical variable assigment and numerical computation.",
+      url: "https://zclarke.dev/computationalPaper/",
+      github: "https://github.com/zakerytclarke/computationalPaper",
+      pkg: "",
+      stats: "",
+      year: "2021",
+      tech: ["js", "html5", "css3"],
+      tags: ["Image recognition", "Machine Learning", "Numerical Computation"],
+      images: ["./assets/portfolio/computationalPaper.gif"]
+    },
+    {
+      title: "Codely",
+      content: "Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.",
+      url: "https://zclarke.dev/codely",
+      github: "https://github.com/zakerytclarke/codely",
+      pkg: "",
+      stats: "",
+      year: "2019",
+      tech: ["js", "html5", "css3", "node"],
+      tags: ["Web IDE", ""],
+      images: ["./assets/portfolio/codely.png"],
+      mobileImg: "./assets/portfolio/codelymobile.png"
+    },
+    {
+      title: "Smart Mirror",
+      content: "",
+      url: "https://zclarke.dev/smart-mirror/",
+      github: "https://github.com/zakerytclarke/smart-mirror",
+      pkg: "",
+      stats: "",
+      year: "2018",
+      tech: ["js", "html5", "css3"],
+      tags: ["API Integration", "Minimal Design"],
+      images: ["./assets/portfolio/smart-mirror.png"],
+      mobileImg: "./assets/portfolio/mirrormobile.png"
+    },
+    {
+      title: "Clarke Computing",
+      content: "",
+      url: "https://clarkecomputing.io",
+      github: "",
+      pkg: "",
+      stats: "",
+      position: "Freelance Developer",
+      year: "2016",
+      tech: ["html5", "css3", "js"],
+      tags: ["Brand Design", "Website Design", "Digital Marketing"],
+      images: ["./assets/portfolio/clarkecomputing.png"]
+    },
+    {
+      title: "E-TransControl",
+      content: "<b>Auto Website</b><br> Kit builder for after-market transmission controllers and various car modificationsa.",
+      url: "",
+      github: "",
+      pkg: "",
+      stats: "",
+      year: "2017",
+      tech: ["wordpress", "html5", "css3"],
+      tags: ["Microcontroller", "Hardware Programming"],
+      images: ["./assets/portfolio/etranscontrol.png", "./assets/portfolio/etranscontrolkitbuilder.png"]
+    },
+    {
+      title: "Thumby Basic",
+      content: "Thumby BASIC is a simple programming language designed to run on the Thumby, a compact and portable gaming console. Thumby BASIC allows you to create text-based programs and games on the Thumby device.",
+      url: "",
+      github: "https://github.com/TinyCircuits/TinyCircuits-Thumby-Games/tree/master/ThumbyBasic",
+      pkg: "",
+      stats: "",
+      year: "2024",
+      tech: ["python"],
+      tags: ["Compilers", "Programming Language"],
+      images: ["./assets/portfolio/thumby_ttt.gif", "./assets/portfolio/thumby_wumpus.gif"],
+      mobileImg: "./assets/portfolio/thumby_ttt.gif"
+    },
+    {
+      title: "Apartment Rent Predictor",
+      content: "Created a model to predict rent prices and apartment occupancy from relevant features. Data will be used to competetively price apartment rent and predict occupancy for profit analysis. Resulted in a model with less than 5% error rate using ensemble machine learning methods.",
+      url: "https://zclarke.dev/Apartment_Rent_Analysis/",
+      github: "https://github.com/zakerytclarke/Apartment_Rent_Analysis",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["python", "node", "html5"],
+      tags: ["Neural Network", "Data Analytics", "Machine Learning"],
+      images: ["./assets/portfolio/apartment.png"]
+    },
+    {
+      title: "Azulejos",
+      year: "2018",
+      tech: ["html5", "css3", "js"],
+      tags: ["Tile Based Board Game", "Animations and Effects"],
+      url: "https://zclarke.dev/azulejos/",
+      github: "https://github.com/zakerytclarke/azulejos",
+
+      images: ["./assets/portfolio/azulejos.png"]
+    },
+    {
+      title: "Stack Calc",
+      year: "2018",
+      tech: ["html5", "css3", "js"],
+      tags: ["Stack Based Calculator", "General Calculations", "Programmable Functions"],
+      url: "https://zclarke.dev/stackcalc/",
+      github: "https://github.com/zakerytclarke/stackcalc",
+      pkg: "",
+      stats: "",
+      images: ["./assets/portfolio/stackcalc.png"]
+    },
+    {
+      title: "Genetic.js",
+      content: "Genetic algorithm library for native JS. Easily abstract complex genetic algorithms into simple wrappers for machine learning and AI projects.",
+      url: "https://codepen.io/zakerytclarke/pen/EzydYv",
+      github: "https://github.com/zakerytclarke/geneticjs",
+      year: "2019",
+      tech: ["html5", "css3", "js"],
+      tags: ["Genetic Algorithms", "Machine Learning"],
+      pkg: "",
+      stats: "",
+      images: ["./assets/portfolio/geneticjs.png"]
+    },
+    {
+      title: "Escher",
+      content: "A mind-bending game built around a physics engine resembling the famous M.C. Escher's artwork.",
+      url: "https://zclarke.dev/escher",
+      year: "2017",
+      tech: ["html5", "css3", "js"],
+      tags: ["Unique Gameplay", "Custom Physics Engine"],
+      github: "",
+      pkg: "",
+      stats: "",
+      images: ["./assets/portfolio/escher.png"]
+    },
+  ];
+
+var resume = {
+  work: [
+    {
+      title: "Lead Developer",
+      company: "E-Center",
+      year: "2019-Current",
+      description: "Sole Developer of E-Sports Statistics Web App<br> Image Recognition \n",
+      tech: ["node", "html5", "css3", "js"]
+    },
+    {
+      title: "Freelance Web Developer",
+      company: "Clarke Computing",
+      year: "2016-Current",
+      description: "Developed variety of websites for many clients\n",
+      tech: ["html5", "css3", "js", "wordpress"]
+    },
+    {
+      title: "Software Developer",
+      company: "E-TransControl",
+      year: "2016-2019",
+      description: "Web Development<br> Embedded Processor Development\n",
+      tech: ["c", "html5", "css3", "js", "wordpress"]
     }
   ],
-  education:[
+  education: [
     {
-      title:"Masters CS",
-      school:"University of New Mexico",
-      year:"2019-Current",
-      tagline:"Focus in Artificial Intelligence & Compilers"
+      title: "Masters CS",
+      school: "University of New Mexico",
+      year: "2019-Current",
+      tagline: "Focus in Artificial Intelligence & Compilers"
     },
     {
-      title:"Undergraduate CS",
-      school:"University of New Mexico",
-      year:"2016-2019",
-      tagline:"Minor in Mathematics"
+      title: "Undergraduate CS",
+      school: "University of New Mexico",
+      year: "2016-2019",
+      tagline: "Minor in Mathematics"
     }
   ],
-  interests:[
+  interests: [
     {
-      title:"Artificial Intelligence",
-      icon:"ml",
-      description:""
+      title: "Artificial Intelligence",
+      icon: "ml",
+      description: ""
     },
     {
-      title:"Functional Programming & Compilers",
-      icon:"lambda",
-      description:""
+      title: "Functional Programming & Compilers",
+      icon: "lambda",
+      description: ""
     },
     {
-      title:"Distributed Computing & Blockchain",
-      icon:"blockchain",
-      description:""
+      title: "Distributed Computing & Blockchain",
+      icon: "blockchain",
+      description: ""
     },
   ]
 };
 
 
-module.exports={
-  config:config,
-  resume:resume
+module.exports = {
+  config: config,
+  resume: resume
 }
