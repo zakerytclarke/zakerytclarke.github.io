@@ -73,6 +73,18 @@ var config =
       images: ["./assets/portfolio/weave.png"]
     },
     {
+      title: "Seam Carver",
+      content: "A fast, fully browser-based implementation of Seam Carving for content-aware image resizing. Instead of cropping or distorting your photos when resizing, this tool intelligently finds and removes the least important pixels (called seams) to preserve the main subjects of your image.",
+      url: "https://zclarke.dev/seamcarving/",
+      github: "https://github.com/zakerytclarke/seamcarving",
+      pkg: "",
+      stats: "",
+      year: "2023",
+      tech: ["js", "html5", "css3"],
+      tags: ["Image Processing", "Computer Vision"],
+      images: ["./assets/portfolio/seamdemo.gif", "./assets/portfolio/seams.png"]
+    },
+    {
       title: "Sports Analysis Tracker",
       content: "Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities along with metadata accounting for camera tilt/pan.",
       url: "",
@@ -83,6 +95,18 @@ var config =
       tech: ["python"],
       tags: ["Image Recognition", "Physics Simulation"],
       images: ["./assets/portfolio/sports_analysis.gif"]
+    },
+    {
+      title: "Quantum Circuit Simulator",
+      content: "NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates (Hadamard, CNot, etc) and is highly extensible. Can be utilized to prototype quantum algorithms before exporting to costly hardware.",
+      url: "",
+      github: "https://github.com/zakerytclarke/quantum-circuit-simulator",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["js", "html5", "css3"],
+      tags: ["Quantum Computing", "Data Analytics", "Statistics"],
+      images: ["./assets/portfolio/quantum.png"]
     },
     {
       title: "E-Center",
@@ -98,18 +122,6 @@ var config =
       images: ["./assets/portfolio/ecenterhome.png", "./assets/portfolio/ecenterstats.png"]
     },
     {
-      title: "Solomon.ai",
-      content: "Created tool to automatically clean and visualize data, and build machine learning models.",
-      url: "https://zclarke.dev/solomon/",
-      github: "https://github.com/zakerytclarke/solomon",
-      pkg: "",
-      stats: "",
-      year: "2020",
-      tech: ["js", "html5", "css3"],
-      tags: ["Machine Learning", "Data Analytics", "Neural Networks"],
-      images: ["./assets/portfolio/solomon.png", "./assets/portfolio/solomon.gif"]
-    },
-    {
       title: "NLP Chess",
       content: "Language Models have been used for a variety of tasks- text generation, translation, etc. They have shown incredible strengths as few or zero shot learns. Let's take advantage of that to build a Chess Engine using GPT-3.",
       url: "https://github.com/zakerytclarke/nlpchess",
@@ -119,18 +131,6 @@ var config =
       tech: ["python"],
       tags: ["Natural Language Processing", "Transfer Learning"],
       images: ["./assets/portfolio/nlpchess.png"]
-    },
-    {
-      title: "Quantum Circuit Simulator",
-      content: "NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates (Hadamard, CNot, etc) and is highly extensible. Can be utilized to prototype quantum algorithms before exporting to costly hardware.",
-      url: "",
-      github: "https://github.com/zakerytclarke/quantum-circuit-simulator",
-      pkg: "",
-      stats: "",
-      year: "2020",
-      tech: ["js", "html5", "css3"],
-      tags: ["Quantum Computing", "Data Analytics", "Statistics"],
-      images: ["./assets/portfolio/quantum.png"]
     },
     {
       title: "Computational Paper",
@@ -169,6 +169,18 @@ var config =
       tags: ["API Integration", "Minimal Design"],
       images: ["./assets/portfolio/smart-mirror.png"],
       mobileImg: "./assets/portfolio/mirrormobile.png"
+    },
+    {
+      title: "Solomon.ai",
+      content: "Created tool to automatically clean and visualize data, and build machine learning models.",
+      url: "https://zclarke.dev/solomon/",
+      github: "https://github.com/zakerytclarke/solomon",
+      pkg: "",
+      stats: "",
+      year: "2020",
+      tech: ["js", "html5", "css3"],
+      tags: ["Machine Learning", "Data Analytics", "Neural Networks"],
+      images: ["./assets/portfolio/solomon.png", "./assets/portfolio/solomon.gif"]
     },
     {
       title: "Clarke Computing",
