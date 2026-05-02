@@ -43,7 +43,7 @@ var config =
       github: "https://github.com/zakerytclarke/llmsearchindex",
       pkg: "",
       stats: "",
-      year: "2025",
+      year: "2026",
       tech: ["python"],
       tags: ["Large Language Models", "Retrieval Augmented Generation", "Search Index"],
       images: ["./assets/llmsearchindex.png"]
