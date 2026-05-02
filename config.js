@@ -37,6 +37,18 @@ var config =
       images: ["./assets/portfolio/HealthRhythmsxMLOps.mp4"]
     },
     {
+      title: "LLM Search Index",
+      content: "LLMSearchIndex is a library and search index that provides fully local, internet-scale web search for LLM RAG applications, trained on 203,169,792 web pages.",
+      url: "https://zakerytclarke-llmsearchindex.hf.space/",
+      github: "https://github.com/zakerytclarke/llmsearchindex",
+      pkg: "",
+      stats: "",
+      year: "2025",
+      tech: ["python"],
+      tags: ["Large Language Models", "Retrieval Augmented Generation", "Search Index"],
+      images: ["./assets/llmsearchindex.png"]
+    },
+    {
       title: "Behavioral Vital Sign Identification in SMI Patients- Patent",
       content: "Built a system to identify imporant passively sensed features for remote patient monitoring, including insights & interventions. Filed patent with core intellectual property.",
       url: "",
