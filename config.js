@@ -38,7 +38,7 @@ var config =
     },
     {
       title: "LLM Search Index",
-      content: "LLMSearchIndex is a library and search index that provides fully local, internet-scale web search for LLM RAG applications, trained on 203,169,792 web pages.",
+      content: "LLMSearchIndex is a library and search index that provides fully local, internet-scale web search for LLM RAG applications, trained on 200 million web pages.",
       url: "https://zakerytclarke-llmsearchindex.hf.space/",
       github: "https://github.com/zakerytclarke/llmsearchindex",
       pkg: "",
